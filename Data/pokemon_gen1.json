@@ -1,0 +1,2483 @@
+[
+  {
+    "Id": 1,
+    "Name": "Bulbasaur",
+    "Types": [
+      "Grass",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 45,
+      "Attack": 49,
+      "Defense": 49,
+      "SpAttack": 65,
+      "SpDefense": 65,
+      "Speed": 45
+    },
+    "Moves": ["LeechSeed", "RazorLeaf", "Toxic", "BodySlam"]
+  },
+  {
+    "Id": 2,
+    "Name": "Ivysaur",
+    "Types": [
+      "Grass",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 62,
+      "Defense": 63,
+      "SpAttack": 80,
+      "SpDefense": 80,
+      "Speed": 60
+    },
+    "Moves": ["RazorLeaf", "SleepPowder", "Double-Edge", "Growth"]
+  },
+  {
+    "Id": 3,
+    "Name": "Venusaur",
+    "Types": [
+      "Grass",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 80,
+      "Attack": 82,
+      "Defense": 83,
+      "SpAttack": 100,
+      "SpDefense": 100,
+      "Speed": 80
+    },
+    "Moves": ["LeechSeed", "TakeDown", "PoisonPowder", "SolarBeam"]
+  },
+  {
+    "Id": 4,
+    "Name": "Charmander",
+    "Types": [
+      "Fire"
+    ],
+    "BaseStats": {
+      "Hp": 39,
+      "Attack": 52,
+      "Defense": 43,
+      "SpAttack": 60,
+      "SpDefense": 50,
+      "Speed": 65
+    },
+    "Moves": ["Flamethrower", "DragonRage", "Slash", "Dig"]
+  },
+  {
+    "Id": 5,
+    "Name": "Charmeleon",
+    "Types": [
+      "Fire"
+    ],
+    "BaseStats": {
+      "Hp": 58,
+      "Attack": 64,
+      "Defense": 58,
+      "SpAttack": 80,
+      "SpDefense": 65,
+      "Speed": 80
+    },
+    "Moves": ["Flamethrower", "Strength", "Counter", "SeismicToss"]
+  },
+  {
+    "Id": 6,
+    "Name": "Charizard",
+    "Types": [
+      "Fire",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 78,
+      "Attack": 84,
+      "Defense": 78,
+      "SpAttack": 109,
+      "SpDefense": 85,
+      "Speed": 100
+    },
+    "Moves": ["Fly", "FireBlast", "SwordsDance", "Slash"]
+  },
+  {
+    "Id": 7,
+    "Name": "Squirtle",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 44,
+      "Attack": 48,
+      "Defense": 65,
+      "SpAttack": 50,
+      "SpDefense": 64,
+      "Speed": 43
+    },
+    "Moves": ["Surf", "Blizzard", "BodySlam", "Dig"]
+  },
+  {
+    "Id": 8,
+    "Name": "Wartortle",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 59,
+      "Attack": 63,
+      "Defense": 80,
+      "SpAttack": 65,
+      "SpDefense": 80,
+      "Speed": 58
+    },
+    "Moves": ["Surf", "IceBeam", "Strength", "Rest"]
+  },
+  {
+    "Id": 9,
+    "Name": "Blastoise",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 79,
+      "Attack": 83,
+      "Defense": 100,
+      "SpAttack": 85,
+      "SpDefense": 105,
+      "Speed": 78
+    },
+    "Moves": ["HydroPump", "SeismicToss", "SkullBash", "Withdraw"]
+  },
+  {
+    "Id": 10,
+    "Name": "Caterpie",
+    "Types": [
+      "Bug"
+    ],
+    "BaseStats": {
+      "Hp": 45,
+      "Attack": 30,
+      "Defense": 35,
+      "SpAttack": 20,
+      "SpDefense": 20,
+      "Speed": 45
+    },
+    "Moves": ["StringShot", "Tackle"]
+  },
+  {
+    "Id": 11,
+    "Name": "Metapod",
+    "Types": [
+      "Bug"
+    ],
+    "BaseStats": {
+      "Hp": 50,
+      "Attack": 20,
+      "Defense": 55,
+      "SpAttack": 25,
+      "SpDefense": 25,
+      "Speed": 30
+    },
+    "Moves": ["StringShot", "Tackle", "Harden"]
+  },
+  {
+    "Id": 12,
+    "Name": "Butterfree",
+    "Types": [
+      "Bug",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 45,
+      "Defense": 50,
+      "SpAttack": 90,
+      "SpDefense": 80,
+      "Speed": 70
+    },
+    "Moves": ["Psychic", "StunSpore", "MegaDrain", "Supersonic"]
+  },
+  {
+    "Id": 13,
+    "Name": "Weedle",
+    "Types": [
+      "Bug",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 40,
+      "Attack": 35,
+      "Defense": 30,
+      "SpAttack": 20,
+      "SpDefense": 20,
+      "Speed": 50
+    },
+    "Moves": ["StringShot", "PoisonSting"]
+  },
+  {
+    "Id": 14,
+    "Name": "Kakuna",
+    "Types": [
+      "Bug",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 45,
+      "Attack": 25,
+      "Defense": 50,
+      "SpAttack": 25,
+      "SpDefense": 25,
+      "Speed": 35
+    },
+    "Moves": ["StringShot", "PoisonSting", "Harden"]
+  },
+  {
+    "Id": 15,
+    "Name": "Beedrill",
+    "Types": [
+      "Bug",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 90,
+      "Defense": 40,
+      "SpAttack": 45,
+      "SpDefense": 80,
+      "Speed": 75
+    },
+    "Moves": ["Twineedle", "SwordsDance", "HyperBeam", "Toxic"]
+  },
+  {
+    "Id": 16,
+    "Name": "Pidgey",
+    "Types": [
+      "Normal",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 40,
+      "Attack": 45,
+      "Defense": 40,
+      "SpAttack": 35,
+      "SpDefense": 35,
+      "Speed": 56
+    },
+    "Moves": ["Fly", "DoubleTeam", "Toxic", "Double-Edge"]
+  },
+  {
+    "Id": 17,
+    "Name": "Pidgeotto",
+    "Types": [
+      "Normal",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 63,
+      "Attack": 60,
+      "Defense": 55,
+      "SpAttack": 50,
+      "SpDefense": 50,
+      "Speed": 71
+    },
+    "Moves": ["Fly", "TakeDown", "QuickAttack", "Sand-Attack"]
+  },
+  {
+    "Id": 18,
+    "Name": "Pidgeot",
+    "Types": [
+      "Normal",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 83,
+      "Attack": 80,
+      "Defense": 75,
+      "SpAttack": 70,
+      "SpDefense": 70,
+      "Speed": 101
+    },
+    "Moves": ["MirrorMove", "Sand-Attack", "Fly", "QuickAttack"]
+  },
+  {
+    "Id": 19,
+    "Name": "Rattata",
+    "Types": [
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 30,
+      "Attack": 56,
+      "Defense": 35,
+      "SpAttack": 25,
+      "SpDefense": 35,
+      "Speed": 72
+    },
+    "Moves": ["SuperFang", "HyperFang", "Blizzard", "QuickAttack"]
+  },
+  {
+    "Id": 20,
+    "Name": "Raticate",
+    "Types": [
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 55,
+      "Attack": 81,
+      "Defense": 60,
+      "SpAttack": 50,
+      "SpDefense": 70,
+      "Speed": 97
+    },
+    "Moves": ["HyperFang", "Thunder", "HyperBeam", "Dig"]
+  },
+  {
+    "Id": 21,
+    "Name": "Spearow",
+    "Types": [
+      "Normal",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 40,
+      "Attack": 60,
+      "Defense": 30,
+      "SpAttack": 31,
+      "SpDefense": 31,
+      "Speed": 70
+    },
+    "Moves": ["DrillPeck", "Double-Edge", "MirrorMove", "DoubleTeam"]
+  },
+  {
+    "Id": 22,
+    "Name": "Fearow",
+    "Types": [
+      "Normal",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 90,
+      "Defense": 65,
+      "SpAttack": 61,
+      "SpDefense": 61,
+      "Speed": 100
+    },
+    "Moves": ["DrillPeck", "FuryAttack", "MirrorMove", "Swift"]
+  },
+  {
+    "Id": 23,
+    "Name": "Ekans",
+    "Types": [
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 35,
+      "Attack": 60,
+      "Defense": 44,
+      "SpAttack": 40,
+      "SpDefense": 54,
+      "Speed": 55
+    },
+    "Moves": ["Earthquake", "BodySlam", "Acid", "Screech"]
+  },
+  {
+    "Id": 24,
+    "Name": "Arbok",
+    "Types": [
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 95,
+      "Defense": 69,
+      "SpAttack": 65,
+      "SpDefense": 79,
+      "Speed": 80
+    },
+    "Moves": ["Glare", "Strength", "PoisonSting", "Dig"]
+  },
+  {
+    "Id": 25,
+    "Name": "Pikachu",
+    "Types": [
+      "Electric"
+    ],
+    "BaseStats": {
+      "Hp": 35,
+      "Attack": 55,
+      "Defense": 40,
+      "SpAttack": 50,
+      "SpDefense": 50,
+      "Speed": 90
+    },
+    "Moves": ["Thunderbolt", "SeismicToss", "Slam", "ThunderWave"]
+  },
+  {
+    "Id": 26,
+    "Name": "Raichu",
+    "Types": [
+      "Electric"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 90,
+      "Defense": 55,
+      "SpAttack": 90,
+      "SpDefense": 80,
+      "Speed": 110
+    },
+    "Moves": ["Thunder", "MegaKick", "ThunderWave", "Flash"]
+  },
+  {
+    "Id": 27,
+    "Name": "Sandshrew",
+    "Types": [
+      "Ground"
+    ],
+    "BaseStats": {
+      "Hp": 50,
+      "Attack": 75,
+      "Defense": 85,
+      "SpAttack": 20,
+      "SpDefense": 30,
+      "Speed": 40
+    },
+    "Moves": ["Earthquake", "Sand-Attack", "Slash", "SeismicToss"]
+  },
+  {
+    "Id": 28,
+    "Name": "Sandslash",
+    "Types": [
+      "Ground"
+    ],
+    "BaseStats": {
+      "Hp": 75,
+      "Attack": 100,
+      "Defense": 110,
+      "SpAttack": 45,
+      "SpDefense": 55,
+      "Speed": 65
+    },
+    "Moves": ["Dig", "Sand-Attack", "Swift", "SeismicToss"]
+  },
+  {
+    "Id": 29,
+    "Name": "Nidoran♀",
+    "Types": [
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 55,
+      "Attack": 47,
+      "Defense": 52,
+      "SpAttack": 40,
+      "SpDefense": 40,
+      "Speed": 41
+    },
+    "Moves": ["Toxic", "Blizzard", "Thunderbolt", "BodySlam"]
+  },
+  {
+    "Id": 30,
+    "Name": "Nidorina",
+    "Types": [
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 70,
+      "Attack": 62,
+      "Defense": 67,
+      "SpAttack": 55,
+      "SpDefense": 55,
+      "Speed": 56
+    },
+    "Moves": ["Toxic", "IceBeam", "Thunder", "Double-Edge"]
+  },
+  {
+    "Id": 31,
+    "Name": "Nidoqueen",
+    "Types": [
+      "Poison",
+      "Ground"
+    ],
+    "BaseStats": {
+      "Hp": 90,
+      "Attack": 92,
+      "Defense": 87,
+      "SpAttack": 75,
+      "SpDefense": 85,
+      "Speed": 76
+    },
+    "Moves": ["Toxic", "Earthquake", "DoubleKick", "Bite"]
+  },
+  {
+    "Id": 32,
+    "Name": "Nidoran♂",
+    "Types": [
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 46,
+      "Attack": 57,
+      "Defense": 40,
+      "SpAttack": 40,
+      "SpDefense": 40,
+      "Speed": 50
+    },
+    "Moves": ["Blizzard", "Thunderbolt", "BodySlam", "PoisonSting"]
+  },
+  {
+    "Id": 33,
+    "Name": "Nidorino",
+    "Types": [
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 61,
+      "Attack": 72,
+      "Defense": 57,
+      "SpAttack": 55,
+      "SpDefense": 55,
+      "Speed": 65
+    },
+    "Moves": ["Double-Edge", "Thunder", "HornDrill", "Leer"]
+  },
+  {
+    "Id": 34,
+    "Name": "Nidoking",
+    "Types": [
+      "Poison",
+      "Ground"
+    ],
+    "BaseStats": {
+      "Hp": 81,
+      "Attack": 102,
+      "Defense": 77,
+      "SpAttack": 85,
+      "SpDefense": 75,
+      "Speed": 85
+    },
+    "Moves": ["Earthquake", "DoubleKick", "HornDrill", "Counter"]
+  },
+  {
+    "Id": 35,
+    "Name": "Clefairy",
+    "Types": [
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 70,
+      "Attack": 45,
+      "Defense": 48,
+      "SpAttack": 60,
+      "SpDefense": 65,
+      "Speed": 35
+    },
+    "Moves": ["Thunder", "Blizzard", "Psychic", "BodySlam"]
+  },
+  {
+    "Id": 36,
+    "Name": "Clefable",
+    "Types": [
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 95,
+      "Attack": 70,
+      "Defense": 73,
+      "SpAttack": 95,
+      "SpDefense": 90,
+      "Speed": 60
+    },
+    "Moves": ["Sing", "IceBeam", "TriAttack", "Minimize"]
+  },
+  {
+    "Id": 37,
+    "Name": "Vulpix",
+    "Types": [
+      "Fire"
+    ],
+    "BaseStats": {
+      "Hp": 38,
+      "Attack": 41,
+      "Defense": 40,
+      "SpAttack": 50,
+      "SpDefense": 65,
+      "Speed": 65
+    },
+    "Moves": ["Flamethrower", "Double-Edge", "Dig", "ConfuseRay"]
+  },
+  {
+    "Id": 38,
+    "Name": "Ninetales",
+    "Types": [
+      "Fire"
+    ],
+    "BaseStats": {
+      "Hp": 73,
+      "Attack": 76,
+      "Defense": 75,
+      "SpAttack": 81,
+      "SpDefense": 100,
+      "Speed": 100
+    },
+    "Moves": ["FireBlast", "TailWhip", "SkullBash", "ConfuseRay"]
+  },
+  {
+    "Id": 39,
+    "Name": "Jigglypuff",
+    "Types": [
+      "Normal",
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 115,
+      "Attack": 45,
+      "Defense": 20,
+      "SpAttack": 45,
+      "SpDefense": 25,
+      "Speed": 20
+    },
+    "Moves": ["Sing", "Psychic", "BodySlam", "SeismicToss"]
+  },
+  {
+    "Id": 40,
+    "Name": "Wigglytuff",
+    "Types": [
+      "Normal",
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 140,
+      "Attack": 70,
+      "Defense": 45,
+      "SpAttack": 85,
+      "SpDefense": 50,
+      "Speed": 45
+    },
+    "Moves": ["Sing", "Thunderbolt", "Double-Edge", "Submission"]
+  },
+  {
+    "Id": 41,
+    "Name": "Zubat",
+    "Types": [
+      "Poison",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 40,
+      "Attack": 45,
+      "Defense": 35,
+      "SpAttack": 30,
+      "SpDefense": 40,
+      "Speed": 55
+    },
+    "Moves": ["ConfuseRay", "Double-Edge", "MegaDrain", "Toxic"]
+  },
+  {
+    "Id": 42,
+    "Name": "Golbat",
+    "Types": [
+      "Poison",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 75,
+      "Attack": 80,
+      "Defense": 70,
+      "SpAttack": 65,
+      "SpDefense": 75,
+      "Speed": 90
+    },
+    "Moves": ["ConfuseRay", "Haze", "MegaDrain", "Bite"]
+  },
+  {
+    "Id": 43,
+    "Name": "Oddish",
+    "Types": [
+      "Grass",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 45,
+      "Attack": 50,
+      "Defense": 55,
+      "SpAttack": 75,
+      "SpDefense": 65,
+      "Speed": 30
+    },
+    "Moves": ["PetalDance", "Double-Edge", "Toxic", "MegaDrain"]
+  },
+  {
+    "Id": 44,
+    "Name": "Gloom",
+    "Types": [
+      "Grass",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 65,
+      "Defense": 70,
+      "SpAttack": 85,
+      "SpDefense": 75,
+      "Speed": 40
+    },
+    "Moves": ["PetalDance", "StunSpore", "TakeDown", "MegaDrain"]
+  },
+  {
+    "Id": 45,
+    "Name": "Vileplume",
+    "Types": [
+      "Grass",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 75,
+      "Attack": 80,
+      "Defense": 85,
+      "SpAttack": 110,
+      "SpDefense": 90,
+      "Speed": 50
+    },
+    "Moves": ["PetalDance", "Cut", "SleepPowder", "Acid"]
+  },
+  {
+    "Id": 46,
+    "Name": "Paras",
+    "Types": [
+      "Bug",
+      "Grass"
+    ],
+    "BaseStats": {
+      "Hp": 35,
+      "Attack": 70,
+      "Defense": 55,
+      "SpAttack": 45,
+      "SpDefense": 55,
+      "Speed": 25
+    },
+    "Moves": ["Spore", "Slash", "Dig", "MegaDrain"]
+  },
+  {
+    "Id": 47,
+    "Name": "Parasect",
+    "Types": [
+      "Bug",
+      "Grass"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 95,
+      "Defense": 80,
+      "SpAttack": 60,
+      "SpDefense": 80,
+      "Speed": 30
+    },
+    "Moves": ["Spore", "SolarBeam", "TakeDown", "Dig"]
+  },
+  {
+    "Id": 48,
+    "Name": "Venonat",
+    "Types": [
+      "Bug",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 55,
+      "Defense": 50,
+      "SpAttack": 40,
+      "SpDefense": 55,
+      "Speed": 45
+    },
+    "Moves": ["Psychic", "StunSpore", "MegaDrain", "Double-Edge"]
+  },
+  {
+    "Id": 49,
+    "Name": "Venomoth",
+    "Types": [
+      "Bug",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 70,
+      "Attack": 65,
+      "Defense": 60,
+      "SpAttack": 90,
+      "SpDefense": 75,
+      "Speed": 90
+    },
+    "Moves": ["Psychic", "Swift", "Supersonic", "SolarBeam"]
+  },
+  {
+    "Id": 50,
+    "Name": "Diglett",
+    "Types": [
+      "Ground"
+    ],
+    "BaseStats": {
+      "Hp": 10,
+      "Attack": 55,
+      "Defense": 25,
+      "SpAttack": 35,
+      "SpDefense": 45,
+      "Speed": 95
+    },
+    "Moves": ["Earthquake", "RockSlide", "Slash", "Sand-Attack"]
+  },
+  {
+    "Id": 51,
+    "Name": "Dugtrio",
+    "Types": [
+      "Ground"
+    ],
+    "BaseStats": {
+      "Hp": 35,
+      "Attack": 100,
+      "Defense": 50,
+      "SpAttack": 50,
+      "SpDefense": 70,
+      "Speed": 120
+    },
+    "Moves": ["Dig", "HyperBeam", "Sand-Attack", "Toxic"]
+  },
+  {
+    "Id": 52,
+    "Name": "Meowth",
+    "Types": [
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 40,
+      "Attack": 45,
+      "Defense": 35,
+      "SpAttack": 40,
+      "SpDefense": 40,
+      "Speed": 90
+    },
+    "Moves": ["Slash", "DoubleTeam", "Thunderbolt", "Swift"]
+  },
+  {
+    "Id": 53,
+    "Name": "Persian",
+    "Types": [
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 70,
+      "Defense": 60,
+      "SpAttack": 65,
+      "SpDefense": 65,
+      "Speed": 115
+    },
+    "Moves": ["Slash", "Growl", "BubbleBeam", "Mimic"]
+  },
+  {
+    "Id": 54,
+    "Name": "Psyduck",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 50,
+      "Attack": 52,
+      "Defense": 48,
+      "SpAttack": 65,
+      "SpDefense": 50,
+      "Speed": 55
+    },
+    "Moves": ["Surf", "Blizzard", "Confusion", "Dig"]
+  },
+  {
+    "Id": 55,
+    "Name": "Golduck",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 80,
+      "Attack": 82,
+      "Defense": 78,
+      "SpAttack": 95,
+      "SpDefense": 80,
+      "Speed": 85
+    },
+    "Moves": ["IceBeam", "Disable", "Surf", "Toxic"]
+  },
+  {
+    "Id": 56,
+    "Name": "Mankey",
+    "Types": [
+      "Fighting"
+    ],
+    "BaseStats": {
+      "Hp": 40,
+      "Attack": 80,
+      "Defense": 35,
+      "SpAttack": 35,
+      "SpDefense": 45,
+      "Speed": 70
+    },
+    "Moves": ["Submission", "Screech", "RockSlide", "SeismicToss"]
+  },
+  {
+    "Id": 57,
+    "Name": "Primeape",
+    "Types": [
+      "Fighting"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 105,
+      "Defense": 60,
+      "SpAttack": 60,
+      "SpDefense": 70,
+      "Speed": 95
+    },
+    "Moves": ["FurySwipes", "Screech", "RockSlide", "LowKick"]
+  },
+  {
+    "Id": 58,
+    "Name": "Growlithe",
+    "Types": [
+      "Fire"
+    ],
+    "BaseStats": {
+      "Hp": 55,
+      "Attack": 70,
+      "Defense": 45,
+      "SpAttack": 70,
+      "SpDefense": 50,
+      "Speed": 60
+    },
+    "Moves": ["Flamethrower", "Dig", "BodySlam", "Reflect"]
+  },
+  {
+    "Id": 59,
+    "Name": "Arcanine",
+    "Types": [
+      "Fire"
+    ],
+    "BaseStats": {
+      "Hp": 90,
+      "Attack": 110,
+      "Defense": 80,
+      "SpAttack": 100,
+      "SpDefense": 80,
+      "Speed": 95
+    },
+    "Moves": ["FireBlast", "DoubleTeam", "TakeDown", "DragonRage"]
+  },
+  {
+    "Id": 60,
+    "Name": "Poliwag",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 40,
+      "Attack": 50,
+      "Defense": 40,
+      "SpAttack": 40,
+      "SpDefense": 40,
+      "Speed": 90
+    },
+    "Moves": ["BodySlam", "Amnesia", "Blizzard", "Surf"]
+  },
+  {
+    "Id": 61,
+    "Name": "Poliwhirl",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 65,
+      "Defense": 65,
+      "SpAttack": 50,
+      "SpDefense": 50,
+      "Speed": 90
+    },
+    "Moves": ["Hypnosis", "Earthquake", "Surf", "IceBeam"]
+  },
+  {
+    "Id": 62,
+    "Name": "Poliwrath",
+    "Types": [
+      "Water",
+      "Fighting"
+    ],
+    "BaseStats": {
+      "Hp": 90,
+      "Attack": 95,
+      "Defense": 95,
+      "SpAttack": 70,
+      "SpDefense": 90,
+      "Speed": 70
+    },
+    "Moves": ["Hypnosis", "HydroPump", "Submission", "Counter"]
+  },
+  {
+    "Id": 63,
+    "Name": "Abra",
+    "Types": [
+      "Psychic"
+    ],
+    "BaseStats": {
+      "Hp": 25,
+      "Attack": 20,
+      "Defense": 15,
+      "SpAttack": 105,
+      "SpDefense": 55,
+      "Speed": 90
+    },
+    "Moves": ["Psychic", "ThunderWave", "SeismicToss", "Reflect"]
+  },
+  {
+    "Id": 64,
+    "Name": "Kadabra",
+    "Types": [
+      "Psychic"
+    ],
+    "BaseStats": {
+      "Hp": 40,
+      "Attack": 35,
+      "Defense": 30,
+      "SpAttack": 120,
+      "SpDefense": 70,
+      "Speed": 105
+    },
+    "Moves": ["Psychic", "Counter", "Dig", "Recover"]
+  },
+  {
+    "Id": 65,
+    "Name": "Alakazam",
+    "Types": [
+      "Psychic"
+    ],
+    "BaseStats": {
+      "Hp": 55,
+      "Attack": 50,
+      "Defense": 45,
+      "SpAttack": 135,
+      "SpDefense": 95,
+      "Speed": 120
+    },
+    "Moves": ["Psybeam", "TriAttack", "Metronome", "Disable"]
+  },
+  {
+    "Id": 66,
+    "Name": "Machop",
+    "Types": [
+      "Fighting"
+    ],
+    "BaseStats": {
+      "Hp": 70,
+      "Attack": 80,
+      "Defense": 50,
+      "SpAttack": 35,
+      "SpDefense": 35,
+      "Speed": 35
+    },
+    "Moves": ["Submission", "Leer", "RockSlide", "Earthquake"]
+  },
+  {
+    "Id": 67,
+    "Name": "Machoke",
+    "Types": [
+      "Fighting"
+    ],
+    "BaseStats": {
+      "Hp": 80,
+      "Attack": 100,
+      "Defense": 70,
+      "SpAttack": 50,
+      "SpDefense": 60,
+      "Speed": 45
+    },
+    "Moves": ["Submission", "Leer", "Strength", "RockSlide"]
+  },
+  {
+    "Id": 68,
+    "Name": "Machamp",
+    "Types": [
+      "Fighting"
+    ],
+    "BaseStats": {
+      "Hp": 90,
+      "Attack": 130,
+      "Defense": 80,
+      "SpAttack": 65,
+      "SpDefense": 85,
+      "Speed": 55
+    },
+    "Moves": ["LowKick", "Leer", "Strength", "Counter"]
+  },
+  {
+    "Id": 69,
+    "Name": "Bellsprout",
+    "Types": [
+      "Grass",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 50,
+      "Attack": 75,
+      "Defense": 35,
+      "SpAttack": 70,
+      "SpDefense": 30,
+      "Speed": 40
+    },
+    "Moves": ["RazorLeaf", "StunSpore", "Growth", "MegaDrain"]
+  },
+  {
+    "Id": 70,
+    "Name": "Weepinbell",
+    "Types": [
+      "Grass",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 90,
+      "Defense": 50,
+      "SpAttack": 85,
+      "SpDefense": 45,
+      "Speed": 55
+    },
+    "Moves": ["RazorLeaf", "Toxic", "Acid", "Slam"]
+  },
+  {
+    "Id": 71,
+    "Name": "Victreebel",
+    "Types": [
+      "Grass",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 80,
+      "Attack": 105,
+      "Defense": 65,
+      "SpAttack": 100,
+      "SpDefense": 70,
+      "Speed": 70
+    },
+    "Moves": ["SolarBeam", "Slam", "Acid", "Reflect"]
+  },
+  {
+    "Id": 72,
+    "Name": "Tentacool",
+    "Types": [
+      "Water",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 40,
+      "Attack": 40,
+      "Defense": 35,
+      "SpAttack": 50,
+      "SpDefense": 100,
+      "Speed": 70
+    },
+    "Moves": ["Surf", "Blizzard", "Supersonic", "MegaDrain"]
+  },
+  {
+    "Id": 73,
+    "Name": "Tentacruel",
+    "Types": [
+      "Water",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 80,
+      "Attack": 70,
+      "Defense": 65,
+      "SpAttack": 80,
+      "SpDefense": 120,
+      "Speed": 100
+    },
+    "Moves": ["Acid", "Cut", "Supersonic", "HydroPump"]
+  },
+  {
+    "Id": 74,
+    "Name": "Geodude",
+    "Types": [
+      "Rock",
+      "Ground"
+    ],
+    "BaseStats": {
+      "Hp": 40,
+      "Attack": 80,
+      "Defense": 100,
+      "SpAttack": 30,
+      "SpDefense": 30,
+      "Speed": 20
+    },
+    "Moves": ["Earthquake", "Explosion", "SeismicToss", "RockSlide"]
+  },
+  {
+    "Id": 75,
+    "Name": "Graveler",
+    "Types": [
+      "Rock",
+      "Ground"
+    ],
+    "BaseStats": {
+      "Hp": 55,
+      "Attack": 95,
+      "Defense": 115,
+      "SpAttack": 45,
+      "SpDefense": 45,
+      "Speed": 35
+    },
+    "Moves": ["Earthquake", "Selfdestruct", "SeismicToss", "Strength"]
+  },
+  {
+    "Id": 76,
+    "Name": "Golem",
+    "Types": [
+      "Rock",
+      "Ground"
+    ],
+    "BaseStats": {
+      "Hp": 80,
+      "Attack": 120,
+      "Defense": 130,
+      "SpAttack": 55,
+      "SpDefense": 65,
+      "Speed": 45
+    },
+    "Moves": ["SeismicToss", "Dig", "Metronome", "FireBlast"]
+  },
+  {
+    "Id": 77,
+    "Name": "Ponyta",
+    "Types": [
+      "Fire"
+    ],
+    "BaseStats": {
+      "Hp": 50,
+      "Attack": 85,
+      "Defense": 55,
+      "SpAttack": 65,
+      "SpDefense": 65,
+      "Speed": 90
+    },
+    "Moves": ["FireBlast", "BodySlam", "Agility", "HornDrill"]
+  },
+  {
+    "Id": 78,
+    "Name": "Rapidash",
+    "Types": [
+      "Fire"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 100,
+      "Defense": 70,
+      "SpAttack": 80,
+      "SpDefense": 80,
+      "Speed": 105
+    },
+    "Moves": ["FireBlast", "Growl", "Stomp", "Toxic"]
+  },
+  {
+    "Id": 79,
+    "Name": "Slowpoke",
+    "Types": [
+      "Water",
+      "Psychic"
+    ],
+    "BaseStats": {
+      "Hp": 90,
+      "Attack": 65,
+      "Defense": 65,
+      "SpAttack": 40,
+      "SpDefense": 40,
+      "Speed": 15
+    },
+    "Moves": ["Surf", "Amnesia", "Psychic", "ThunderWave"]
+  },
+  {
+    "Id": 80,
+    "Name": "Slowbro",
+    "Types": [
+      "Water",
+      "Psychic"
+    ],
+    "BaseStats": {
+      "Hp": 95,
+      "Attack": 75,
+      "Defense": 110,
+      "SpAttack": 100,
+      "SpDefense": 80,
+      "Speed": 30
+    },
+    "Moves": ["Surf", "Withdraw", "Psychic", "Disable"]
+  },
+  {
+    "Id": 81,
+    "Name": "Magnemite",
+    "Types": [
+      "Electric"
+    ],
+    "BaseStats": {
+      "Hp": 25,
+      "Attack": 35,
+      "Defense": 70,
+      "SpAttack": 95,
+      "SpDefense": 55,
+      "Speed": 45
+    },
+    "Moves": ["Thunderbolt", "ThunderWave", "Supersonic", "Double-Edge"]
+  },
+  {
+    "Id": 82,
+    "Name": "Magneton",
+    "Types": [
+      "Electric"
+    ],
+    "BaseStats": {
+      "Hp": 50,
+      "Attack": 60,
+      "Defense": 95,
+      "SpAttack": 120,
+      "SpDefense": 70,
+      "Speed": 70
+    },
+    "Moves": ["Swift", "Supersonic", "Thunder", "Screech"]
+  },
+  {
+    "Id": 83,
+    "Name": "Farfetch'd",
+    "Types": [
+      "Normal",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 52,
+      "Attack": 90,
+      "Defense": 55,
+      "SpAttack": 58,
+      "SpDefense": 62,
+      "Speed": 60
+    },
+    "Moves": ["Slash", "Fly", "Toxic", "Sand-Attack"]
+  },
+  {
+    "Id": 84,
+    "Name": "Doduo",
+    "Types": [
+      "Normal",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 35,
+      "Attack": 85,
+      "Defense": 45,
+      "SpAttack": 35,
+      "SpDefense": 35,
+      "Speed": 75
+    },
+    "Moves": ["DrillPeck", "TriAttack", "DoubleTeam", "Reflect"]
+  },
+  {
+    "Id": 85,
+    "Name": "Dodrio",
+    "Types": [
+      "Normal",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 110,
+      "Defense": 70,
+      "SpAttack": 60,
+      "SpDefense": 60,
+      "Speed": 110
+    },
+    "Moves": ["FLy", "Reflect", "TriAttack", "Agility"]
+  },
+  {
+    "Id": 86,
+    "Name": "Seel",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 45,
+      "Defense": 55,
+      "SpAttack": 45,
+      "SpDefense": 70,
+      "Speed": 45
+    },
+    "Moves": ["IceBeam", "Surf", "BodySlam", "HornDrill"]
+  },
+  {
+    "Id": 87,
+    "Name": "Dewgong",
+    "Types": [
+      "Water",
+      "Ice"
+    ],
+    "BaseStats": {
+      "Hp": 90,
+      "Attack": 70,
+      "Defense": 80,
+      "SpAttack": 70,
+      "SpDefense": 95,
+      "Speed": 70
+    },
+    "Moves": ["AuroraBeam", "Surf", "Rest", "Headbutt"]
+  },
+  {
+    "Id": 88,
+    "Name": "Grimer",
+    "Types": [
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 80,
+      "Attack": 80,
+      "Defense": 50,
+      "SpAttack": 40,
+      "SpDefense": 50,
+      "Speed": 25
+    },
+    "Moves": ["Sludge", "Explosion", "BodySlam", "Screech"]
+  },
+  {
+    "Id": 89,
+    "Name": "Muk",
+    "Types": [
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 105,
+      "Attack": 105,
+      "Defense": 75,
+      "SpAttack": 65,
+      "SpDefense": 100,
+      "Speed": 50
+    },
+    "Moves": ["Sludge", "Selfdestruct", "Thunderbolt", "HyperBeam"]
+  },
+  {
+    "Id": 90,
+    "Name": "Shellder",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 30,
+      "Attack": 65,
+      "Defense": 100,
+      "SpAttack": 45,
+      "SpDefense": 25,
+      "Speed": 40
+    },
+    "Moves": ["Surf", "TriAttack", "Explosion", "Blizzard"]
+  },
+  {
+    "Id": 91,
+    "Name": "Cloyster",
+    "Types": [
+      "Water",
+      "Ice"
+    ],
+    "BaseStats": {
+      "Hp": 50,
+      "Attack": 95,
+      "Defense": 180,
+      "SpAttack": 85,
+      "SpDefense": 45,
+      "Speed": 70
+    },
+    "Moves": ["BubbleBeam", "Supersonic", "SpikeCannon", "IceBeam"]
+  },
+  {
+    "Id": 92,
+    "Name": "Gastly",
+    "Types": [
+      "Ghost",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 30,
+      "Attack": 35,
+      "Defense": 30,
+      "SpAttack": 100,
+      "SpDefense": 35,
+      "Speed": 80
+    },
+    "Moves": ["Psychic", "NightShade", "Hypnosis", "ConfuseRay"]
+  },
+  {
+    "Id": 93,
+    "Name": "Haunter",
+    "Types": [
+      "Ghost",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 45,
+      "Attack": 50,
+      "Defense": 45,
+      "SpAttack": 115,
+      "SpDefense": 55,
+      "Speed": 95
+    },
+    "Moves": ["Psychic", "MegaDrain", "Explosion", "ConfuseRay"]
+  },
+  {
+    "Id": 94,
+    "Name": "Gengar",
+    "Types": [
+      "Ghost",
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 65,
+      "Defense": 60,
+      "SpAttack": 130,
+      "SpDefense": 75,
+      "Speed": 110
+    },
+    "Moves": ["Thunderbolt", "ConfuseRay", "NightShade", "Hypnosis"]
+  },
+  {
+    "Id": 95,
+    "Name": "Onix",
+    "Types": [
+      "Rock",
+      "Ground"
+    ],
+    "BaseStats": {
+      "Hp": 35,
+      "Attack": 45,
+      "Defense": 160,
+      "SpAttack": 30,
+      "SpDefense": 45,
+      "Speed": 70
+    },
+    "Moves": ["Earthquake", "Explosion", "RockSlide", "Strength"]
+  },
+  {
+    "Id": 96,
+    "Name": "Drowzee",
+    "Types": [
+      "Psychic"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 48,
+      "Defense": 45,
+      "SpAttack": 43,
+      "SpDefense": 90,
+      "Speed": 42
+    },
+    "Moves": ["Hypnosis", "TriAttack", "PoisonGas", "Psychic"]
+  },
+  {
+    "Id": 97,
+    "Name": "Hypno",
+    "Types": [
+      "Psychic"
+    ],
+    "BaseStats": {
+      "Hp": 85,
+      "Attack": 73,
+      "Defense": 70,
+      "SpAttack": 73,
+      "SpDefense": 115,
+      "Speed": 67
+    },
+    "Moves": ["Hypnosis", "Meditate", "Headbutt", "Submission"]
+  },
+  {
+    "Id": 98,
+    "Name": "Krabby",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 30,
+      "Attack": 105,
+      "Defense": 90,
+      "SpAttack": 25,
+      "SpDefense": 25,
+      "Speed": 50
+    },
+    "Moves": ["Crabhammer", "Guillotine", "Double-Edge", "Blizzard"]
+  },
+  {
+    "Id": 99,
+    "Name": "Kingler",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 55,
+      "Attack": 130,
+      "Defense": 115,
+      "SpAttack": 50,
+      "SpDefense": 50,
+      "Speed": 75
+    },
+    "Moves": ["Crabhammer", "SwordsDance", "Guillotine", "Stomp"]
+  },
+  {
+    "Id": 100,
+    "Name": "Voltorb",
+    "Types": [
+      "Electric"
+    ],
+    "BaseStats": {
+      "Hp": 40,
+      "Attack": 30,
+      "Defense": 50,
+      "SpAttack": 55,
+      "SpDefense": 55,
+      "Speed": 100
+    },
+    "Moves": ["Thunderbolt", "Explosion", "ThunderWave", "Swift"]
+  },
+  {
+    "Id": 101,
+    "Name": "Electrode",
+    "Types": [
+      "Electric"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 50,
+      "Defense": 70,
+      "SpAttack": 80,
+      "SpDefense": 80,
+      "Speed": 150
+    },
+    "Moves": ["Thunder", "ThunderWave", "Swift", "Selfdestruct"]
+  },
+  {
+    "Id": 102,
+    "Name": "Exeggcute",
+    "Types": [
+      "Grass",
+      "Psychic"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 40,
+      "Defense": 80,
+      "SpAttack": 60,
+      "SpDefense": 45,
+      "Speed": 40
+    },
+    "Moves": ["Psychic", "Toxic", "Explosion", "LeechSeed"]
+  },
+  {
+    "Id": 103,
+    "Name": "Exeggutor",
+    "Types": [
+      "Grass",
+      "Psychic"
+    ],
+    "BaseStats": {
+      "Hp": 95,
+      "Attack": 95,
+      "Defense": 85,
+      "SpAttack": 125,
+      "SpDefense": 75,
+      "Speed": 55
+    },
+    "Moves": ["EggBomb", "StunSpore", "LeechSeed", "MegaDrain"]
+  },
+  {
+    "Id": 104,
+    "Name": "Cubone",
+    "Types": [
+      "Ground"
+    ],
+    "BaseStats": {
+      "Hp": 50,
+      "Attack": 50,
+      "Defense": 95,
+      "SpAttack": 40,
+      "SpDefense": 50,
+      "Speed": 35
+    },
+    "Moves": ["Earthquake", "Strength", "Submission", "Blizzard"]
+  },
+  {
+    "Id": 105,
+    "Name": "Marowak",
+    "Types": [
+      "Ground"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 80,
+      "Defense": 110,
+      "SpAttack": 50,
+      "SpDefense": 80,
+      "Speed": 45
+    },
+    "Moves": ["Bonemerang", "Leer", "Thrash", "FireBlast"]
+  },
+  {
+    "Id": 106,
+    "Name": "Hitmonlee",
+    "Types": [
+      "Fighting"
+    ],
+    "BaseStats": {
+      "Hp": 50,
+      "Attack": 120,
+      "Defense": 53,
+      "SpAttack": 35,
+      "SpDefense": 110,
+      "Speed": 87
+    },
+    "Moves": ["RollingKick", "SeismicToss", "MegaKick", "Metronome"]
+  },
+  {
+    "Id": 107,
+    "Name": "Hitmonchan",
+    "Types": [
+      "Fighting"
+    ],
+    "BaseStats": {
+      "Hp": 50,
+      "Attack": 105,
+      "Defense": 79,
+      "SpAttack": 35,
+      "SpDefense": 110,
+      "Speed": 76
+    },
+    "Moves": ["Submission", "Strength", "ThunderPunch", "IcePunch"]
+  },
+  {
+    "Id": 108,
+    "Name": "Lickitung",
+    "Types": [
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 90,
+      "Attack": 55,
+      "Defense": 75,
+      "SpAttack": 60,
+      "SpDefense": 75,
+      "Speed": 30
+    },
+    "Moves": ["Strength", "FireBlast", "Thunder", "Blizzard"]
+  },
+  {
+    "Id": 109,
+    "Name": "Koffing",
+    "Types": [
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 40,
+      "Attack": 65,
+      "Defense": 95,
+      "SpAttack": 60,
+      "SpDefense": 45,
+      "Speed": 35
+    },
+    "Moves": ["Sludge", "Explosion", "Toxic", "Thunderbolt"]
+  },
+  {
+    "Id": 110,
+    "Name": "Weezing",
+    "Types": [
+      "Poison"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 90,
+      "Defense": 120,
+      "SpAttack": 85,
+      "SpDefense": 70,
+      "Speed": 60
+    },
+    "Moves": ["Sludge", "Selfdestruct", "HyperBeam", "FireBlast"]
+  },
+  {
+    "Id": 111,
+    "Name": "Rhyhorn",
+    "Types": [
+      "Ground",
+      "Rock"
+    ],
+    "BaseStats": {
+      "Hp": 80,
+      "Attack": 85,
+      "Defense": 95,
+      "SpAttack": 30,
+      "SpDefense": 30,
+      "Speed": 25
+    },
+    "Moves": ["Earthquake", "FireBlast", "BodySlam", "RockSlide"]
+  },
+  {
+    "Id": 112,
+    "Name": "Rhydon",
+    "Types": [
+      "Ground",
+      "Rock"
+    ],
+    "BaseStats": {
+      "Hp": 105,
+      "Attack": 130,
+      "Defense": 120,
+      "SpAttack": 45,
+      "SpDefense": 45,
+      "Speed": 40
+    },
+    "Moves": ["Dig", "Surf", "Strength", "Thunder"]
+  },
+  {
+    "Id": 113,
+    "Name": "Chansey",
+    "Types": [
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 250,
+      "Attack": 5,
+      "Defense": 5,
+      "SpAttack": 35,
+      "SpDefense": 105,
+      "Speed": 50
+    },
+    "Moves": ["Thunder", "Rest", "FireBlast", "Minimize"]
+  },
+  {
+    "Id": 114,
+    "Name": "Tangela",
+    "Types": [
+      "Grass"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 55,
+      "Defense": 115,
+      "SpAttack": 100,
+      "SpDefense": 40,
+      "Speed": 60
+    },
+    "Moves": ["Toxic", "Double-Edge", "MegaDrain", "Growth"]
+  },
+  {
+    "Id": 115,
+    "Name": "Kangaskhan",
+    "Types": [
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 105,
+      "Attack": 95,
+      "Defense": 80,
+      "SpAttack": 40,
+      "SpDefense": 80,
+      "Speed": 90
+    },
+    "Moves": ["DizzyPunch", "Thunderbolt", "RockSlide", "Surf"]
+  },
+  {
+    "Id": 116,
+    "Name": "Horsea",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 30,
+      "Attack": 40,
+      "Defense": 70,
+      "SpAttack": 70,
+      "SpDefense": 25,
+      "Speed": 60
+    },
+    "Moves": ["HydroPump", "IceBeam", "Toxic", "SmokeScreen"]
+  },
+  {
+    "Id": 117,
+    "Name": "Seadra",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 55,
+      "Attack": 65,
+      "Defense": 95,
+      "SpAttack": 95,
+      "SpDefense": 45,
+      "Speed": 85
+    },
+    "Moves": ["SmokeScreen", "Surf", "Swift", "Toxic"]
+  },
+  {
+    "Id": 118,
+    "Name": "Goldeen",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 45,
+      "Attack": 67,
+      "Defense": 60,
+      "SpAttack": 35,
+      "SpDefense": 50,
+      "Speed": 63
+    },
+    "Moves": ["Surf", "Blizzard", "Supersonic", "HornDrill"]
+  },
+  {
+    "Id": 119,
+    "Name": "Seaking",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 80,
+      "Attack": 92,
+      "Defense": 65,
+      "SpAttack": 65,
+      "SpDefense": 80,
+      "Speed": 68
+    },
+    "Moves": ["Waterfall", "IceBeam", "Supersonic", "HornAttack"]
+  },
+  {
+    "Id": 120,
+    "Name": "Staryu",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 30,
+      "Attack": 45,
+      "Defense": 55,
+      "SpAttack": 70,
+      "SpDefense": 55,
+      "Speed": 85
+    },
+    "Moves": ["Thunderbolt", "Recover", "HydroPump", "Psychic"]
+  },
+  {
+    "Id": 121,
+    "Name": "Starmie",
+    "Types": [
+      "Water",
+      "Psychic"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 75,
+      "Defense": 85,
+      "SpAttack": 100,
+      "SpDefense": 85,
+      "Speed": 115
+    },
+    "Moves": ["Surf", "Thunder", "Harden", "Swift"]
+  },
+  {
+    "Id": 122,
+    "Name": "Mr. Mime",
+    "Types": [
+      "Psychic",
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 40,
+      "Attack": 45,
+      "Defense": 65,
+      "SpAttack": 100,
+      "SpDefense": 120,
+      "Speed": 90
+    },
+    "Moves": ["Barrier", "SeismicToss", "Psychic", "Metronome"]
+  },
+  {
+    "Id": 123,
+    "Name": "Scyther",
+    "Types": [
+      "Bug",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 70,
+      "Attack": 110,
+      "Defense": 80,
+      "SpAttack": 55,
+      "SpDefense": 80,
+      "Speed": 105
+    },
+    "Moves": ["Slash", "DoubleTeam", "WingAttack", "Leer"]
+  },
+  {
+    "Id": 124,
+    "Name": "Jynx",
+    "Types": [
+      "Ice",
+      "Psychic"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 50,
+      "Defense": 35,
+      "SpAttack": 115,
+      "SpDefense": 95,
+      "Speed": 95
+    },
+    "Moves": ["Hypnosis", "MegaPunch", "IcePunch", "Psychic"]
+  },
+  {
+    "Id": 125,
+    "Name": "Electabuzz",
+    "Types": [
+      "Electric"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 83,
+      "Defense": 57,
+      "SpAttack": 95,
+      "SpDefense": 85,
+      "Speed": 105
+    },
+    "Moves": ["ThunderPunch", "MegaPunch", "ThunderWave", "Psychic"]
+  },
+  {
+    "Id": 126,
+    "Name": "Magmar",
+    "Types": [
+      "Fire"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 95,
+      "Defense": 57,
+      "SpAttack": 100,
+      "SpDefense": 85,
+      "Speed": 93
+    },
+    "Moves": ["Psychic", "FirePunch", "SmokeScreen", "MegaPunch"]
+  },
+  {
+    "Id": 127,
+    "Name": "Pinsir",
+    "Types": [
+      "Bug"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 125,
+      "Defense": 100,
+      "SpAttack": 55,
+      "SpDefense": 70,
+      "Speed": 85
+    },
+    "Moves": ["Strength", "SeismicToss", "Harden", "Guillotine"]
+  },
+  {
+    "Id": 128,
+    "Name": "Tauros",
+    "Types": [
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 75,
+      "Attack": 100,
+      "Defense": 95,
+      "SpAttack": 40,
+      "SpDefense": 70,
+      "Speed": 110
+    },
+    "Moves": ["Double-Edge", "HornDrill", "FireBlast", "TailWhip"]
+  },
+  {
+    "Id": 129,
+    "Name": "Magikarp",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 20,
+      "Attack": 10,
+      "Defense": 55,
+      "SpAttack": 15,
+      "SpDefense": 20,
+      "Speed": 80
+    },
+    "Moves": ["Splash","Tackle"]
+  },
+  {
+    "Id": 130,
+    "Name": "Gyarados",
+    "Types": [
+      "Water",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 95,
+      "Attack": 125,
+      "Defense": 79,
+      "SpAttack": 60,
+      "SpDefense": 100,
+      "Speed": 81
+    },
+    "Moves": ["Surf", "FireBlast", "DragonRage", "Bite"]
+  },
+  {
+    "Id": 131,
+    "Name": "Lapras",
+    "Types": [
+      "Water",
+      "Ice"
+    ],
+    "BaseStats": {
+      "Hp": 130,
+      "Attack": 85,
+      "Defense": 80,
+      "SpAttack": 85,
+      "SpDefense": 95,
+      "Speed": 60
+    },
+    "Moves": ["IceBeam", "Sing", "SolarBeam", "BodySlam"]
+  },
+  {
+    "Id": 132,
+    "Name": "Ditto",
+    "Types": [
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 48,
+      "Attack": 48,
+      "Defense": 48,
+      "SpAttack": 48,
+      "SpDefense": 48,
+      "Speed": 48
+    },
+    "Moves": ["Transform"]
+  },
+  {
+    "Id": 133,
+    "Name": "Eevee",
+    "Types": [
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 55,
+      "Attack": 55,
+      "Defense": 50,
+      "SpAttack": 45,
+      "SpDefense": 65,
+      "Speed": 55
+    },
+    "Moves": ["BodySlam", "Toxic", "Swift", "Sand-Attack"]
+  },
+  {
+    "Id": 134,
+    "Name": "Vaporeon",
+    "Types": [
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 130,
+      "Attack": 65,
+      "Defense": 60,
+      "SpAttack": 110,
+      "SpDefense": 95,
+      "Speed": 65
+    },
+    "Moves": ["Surf", "AcidArmor", "QuickAttack", "Sand-Attack"]
+  },
+  {
+    "Id": 135,
+    "Name": "Jolteon",
+    "Types": [
+      "Electric"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 65,
+      "Defense": 60,
+      "SpAttack": 110,
+      "SpDefense": 95,
+      "Speed": 130
+    },
+    "Moves": ["Thunderbolt", "Sand-Attack", "PinMissile", "Toxic"]
+  },
+  {
+    "Id": 136,
+    "Name": "Flareon",
+    "Types": [
+      "Fire"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 130,
+      "Defense": 60,
+      "SpAttack": 95,
+      "SpDefense": 110,
+      "Speed": 65
+    },
+    "Moves": ["FireBlast", "Sand-Attack", "TakeDown", "Smog"]
+  },
+  {
+    "Id": 137,
+    "Name": "Porygon",
+    "Types": [
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 65,
+      "Attack": 60,
+      "Defense": 70,
+      "SpAttack": 85,
+      "SpDefense": 75,
+      "Speed": 40
+    },
+    "Moves": ["TriAttack", "Conversion", "Psychic", "Sharpen"]
+  },
+  {
+    "Id": 138,
+    "Name": "Omanyte",
+    "Types": [
+      "Rock",
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 35,
+      "Attack": 40,
+      "Defense": 100,
+      "SpAttack": 90,
+      "SpDefense": 55,
+      "Speed": 35
+    },
+    "Moves": ["Surf", "DoubleTeam", "IceBeam", "Double-Edge"]
+  },
+  {
+    "Id": 139,
+    "Name": "Omastar",
+    "Types": [
+      "Rock",
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 70,
+      "Attack": 60,
+      "Defense": 125,
+      "SpAttack": 115,
+      "SpDefense": 70,
+      "Speed": 55
+    },
+    "Moves": ["HydroPump", "Withdraw", "Submission", "SpikeCannon"]
+  },
+  {
+    "Id": 140,
+    "Name": "Kabuto",
+    "Types": [
+      "Rock",
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 30,
+      "Attack": 80,
+      "Defense": 90,
+      "SpAttack": 55,
+      "SpDefense": 45,
+      "Speed": 55
+    },
+    "Moves": ["HydroPump", "DoubleTeam", "Blizzard", "Slash"]
+  },
+  {
+    "Id": 141,
+    "Name": "Kabutops",
+    "Types": [
+      "Rock",
+      "Water"
+    ],
+    "BaseStats": {
+      "Hp": 60,
+      "Attack": 115,
+      "Defense": 105,
+      "SpAttack": 65,
+      "SpDefense": 70,
+      "Speed": 80
+    },
+    "Moves": ["Surf", "Submission", "SwordsDance", "MegaKick"]
+  },
+  {
+    "Id": 142,
+    "Name": "Aerodactyl",
+    "Types": [
+      "Rock",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 80,
+      "Attack": 105,
+      "Defense": 65,
+      "SpAttack": 60,
+      "SpDefense": 75,
+      "Speed": 130
+    },
+    "Moves": ["Supersonic", "HyperBeam", "DragonRage", "Fly"]
+  },
+  {
+    "Id": 143,
+    "Name": "Snorlax",
+    "Types": [
+      "Normal"
+    ],
+    "BaseStats": {
+      "Hp": 160,
+      "Attack": 110,
+      "Defense": 65,
+      "SpAttack": 65,
+      "SpDefense": 110,
+      "Speed": 30
+    },
+    "Moves": ["MegaKick", "Rest", "RockSlide", "Metronome"]
+  },
+  {
+    "Id": 144,
+    "Name": "Articuno",
+    "Types": [
+      "Ice",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 90,
+      "Attack": 85,
+      "Defense": 100,
+      "SpAttack": 95,
+      "SpDefense": 125,
+      "Speed": 85
+    },
+    "Moves": ["IceBeam", "DoubleTeam", "SkyAttack", "RazorWind"]
+  },
+  {
+    "Id": 145,
+    "Name": "Zapdos",
+    "Types": [
+      "Electric",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 90,
+      "Attack": 90,
+      "Defense": 85,
+      "SpAttack": 125,
+      "SpDefense": 90,
+      "Speed": 100
+    },
+    "Moves": ["Thunderbolt", "Flash", "SkyAttack", "ThunderWave"]
+  },
+  {
+    "Id": 146,
+    "Name": "Moltres",
+    "Types": [
+      "Fire",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 90,
+      "Attack": 100,
+      "Defense": 90,
+      "SpAttack": 125,
+      "SpDefense": 85,
+      "Speed": 90
+    },
+    "Moves": ["FireBlast", "DoubleTeam", "Fly", "Swift"]
+  },
+  {
+    "Id": 147,
+    "Name": "Dratini",
+    "Types": [
+      "Dragon"
+    ],
+    "BaseStats": {
+      "Hp": 41,
+      "Attack": 64,
+      "Defense": 45,
+      "SpAttack": 50,
+      "SpDefense": 50,
+      "Speed": 50
+    },
+    "Moves": ["HyperBeam", "ThunderWave", "BodySlam", "Thunderbolt"]
+  },
+  {
+    "Id": 148,
+    "Name": "Dragonair",
+    "Types": [
+      "Dragon"
+    ],
+    "BaseStats": {
+      "Hp": 61,
+      "Attack": 84,
+      "Defense": 65,
+      "SpAttack": 70,
+      "SpDefense": 70,
+      "Speed": 70
+    },
+    "Moves": ["HyperBeam", "ThunderWave", "Swift", "IceBeam"]
+  },
+  {
+    "Id": 149,
+    "Name": "Dragonite",
+    "Types": [
+      "Dragon",
+      "Flying"
+    ],
+    "BaseStats": {
+      "Hp": 91,
+      "Attack": 134,
+      "Defense": 95,
+      "SpAttack": 100,
+      "SpDefense": 100,
+      "Speed": 80
+    },
+    "Moves": ["Slam", "Agility", "DragonRage", "Thunder"]
+  },
+  {
+    "Id": 150,
+    "Name": "Mewtwo",
+    "Types": [
+      "Psychic"
+    ],
+    "BaseStats": {
+      "Hp": 106,
+      "Attack": 110,
+      "Defense": 90,
+      "SpAttack": 154,
+      "SpDefense": 90,
+      "Speed": 130
+    },
+    "Moves": ["Psychic", "Amnesia", "Barrier", "Recover"]
+  },
+  {
+    "Id": 151,
+    "Name": "Mew",
+    "Types": [
+      "Psychic"
+    ],
+    "BaseStats": {
+      "Hp": 100,
+      "Attack": 100,
+      "Defense": 100,
+      "SpAttack": 100,
+      "SpDefense": 100,
+      "Speed": 100
+    },
+    "Moves": ["Metronome", "Transform", "HyperBeam", "Psychic"]
+  }
+]

@@ -1,0 +1,2766 @@
+[
+  {
+    "Name": "Absorb",
+    "Type": "Grass",
+    "Category": "Special",
+    "Power": 20,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Drain",
+        "Percent": 50
+      }
+    ]
+  },
+  {
+    "Name": "Acid",
+    "Type": "Poison",
+    "Category": "Physical",
+    "Power": 40,
+    "Accuracy": 100,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": 33,
+        "Stages": -1,
+        "AffectedStat": "Defense"
+      }
+    ]
+  },
+  {
+    "Name": "AcidArmor",
+    "Type": "Poison",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Self",
+        "Chance": null,
+        "Stages": 2,
+        "AffectedStat": "Defense"
+      }
+    ]
+  },
+  {
+    "Name": "Agility",
+    "Type": "Psychic",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Self",
+        "Chance": null,
+        "Stages": 2,
+        "AffectedStat": "Speed"
+      }
+    ]
+  },
+  {
+    "Name": "Amnesia",
+    "Type": "Psychic",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Self",
+        "Chance": null,
+        "Stages": 2,
+        "AffectedStat": "SpDefense"
+      }
+    ]
+  },
+  {
+    "Name": "AuroraBeam",
+    "Type": "Ice",
+    "Category": "Special",
+    "Power": 65,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Stages": -1,
+        "AffectedStat": "Attack"
+      }
+    ]
+  },
+  {
+    "Name": "Barrage",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 15,
+    "Accuracy": 85,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Multistrike",
+        "CriticalRatio": "Standard",
+        "MinHits": 2,
+        "MaxHits": 5
+      }
+    ]
+  },
+  {
+    "Name": "Barrier",
+    "Type": "Psychic",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Self",
+        "Chance": null,
+        "Stages": 2,
+        "AffectedStat": "Defense"
+      }
+    ]
+  },
+  {
+    "Name": "Bite",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 60,
+    "Accuracy": 100,
+    "Pp": 25,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 30,
+        "Status": "Flinch"
+      }
+    ]
+  },
+  {
+    "Name": "Blizzard",
+    "Type": "Ice",
+    "Category": "Special",
+    "Power": 120,
+    "Accuracy": 90,
+    "Pp": 5,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 30,
+        "Status": "Freeze"
+      }
+    ]
+  },
+  {
+    "Name": "BodySlam",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 85,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 30,
+        "Status": "Paralysis"
+      }
+    ]
+  },
+  {
+    "Name": "BoneClub",
+    "Type": "Ground",
+    "Category": "Physical",
+    "Power": 65,
+    "Accuracy": 85,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Status": "Flinch"
+      }
+    ]
+  },
+  {
+    "Name": "Bonemerang",
+    "Type": "Ground",
+    "Category": "Physical",
+    "Power": 50,
+    "Accuracy": 90,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Multistrike",
+        "CriticalRatio": "Standard",
+        "MinHits": 2,
+        "MaxHits": 2
+      }
+    ]
+  },
+  {
+    "Name": "Bubble",
+    "Type": "Water",
+    "Category": "Special",
+    "Power": 20,
+    "Accuracy": 100,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Stages": -1,
+        "AffectedStat": "Speed"
+      }
+    ]
+  },
+  {
+    "Name": "BubbleBeam",
+    "Type": "Water",
+    "Category": "Special",
+    "Power": 65,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Stages": -1,
+        "AffectedStat": "Speed"
+      }
+    ]
+  },
+  {
+    "Name": "CometPunch",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 18,
+    "Accuracy": 85,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Multistrike",
+        "CriticalRatio": "Standard",
+        "MinHits": 2,
+        "MaxHits": 5
+      }
+    ]
+  },
+  {
+    "Name": "ConfuseRay",
+    "Type": "Ghost",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": null,
+        "Status": "Confusion"
+      }
+    ]
+  },
+  {
+    "Name": "Confusion",
+    "Type": "Psychic",
+    "Category": "Special",
+    "Power": 50,
+    "Accuracy": 100,
+    "Pp": 25,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": null,
+        "Status": "Confusion"
+      }
+    ]
+  },
+  {
+    "Name": "Constrict",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 10,
+    "Accuracy": 100,
+    "Pp": 35,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Stages": -1,
+        "AffectedStat": "Speed"
+      }
+    ]
+  },
+  {
+    "Name": "Conversion",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "TypeChange"
+      }
+    ]
+  },
+  {
+    "Name": "Counter",
+    "Type": "Fighting",
+    "Category": "Physical",
+    "Power": null,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": -5,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "CounterDamage"
+      }
+    ]
+  },
+  {
+    "Name": "Crabhammer",
+    "Type": "Water",
+    "Category": "Special",
+    "Power": 90,
+    "Accuracy": 85,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "High"
+      }
+    ]
+  },
+  {
+    "Name": "Cut",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 50,
+    "Accuracy": 95,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "DefenseCurl",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 40,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Self",
+        "Chance": null,
+        "Stages": 1,
+        "AffectedStat": "Defense"
+      }
+    ]
+  },
+  {
+    "Name": "Dig",
+    "Type": "Ground",
+    "Category": "Physical",
+    "Power": 100,
+    "Accuracy": 100,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "ChargingTurn",
+        "SemiInvulnerableTurn": true
+      },
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "Disable",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 55,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Disable"
+      }
+    ]
+  },
+  {
+    "Name": "DizzyPunch",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 70,
+    "Accuracy": 100,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "DoubleKick",
+    "Type": "Fighting",
+    "Category": "Physical",
+    "Power": 30,
+    "Accuracy": 100,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Multistrike",
+        "CriticalRatio": "Standard",
+        "MinHits": 2,
+        "MaxHits": 2
+      }
+    ]
+  },
+  {
+    "Name": "DoubleSlap",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 15,
+    "Accuracy": 85,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Multistrike",
+        "CriticalRatio": "Standard",
+        "MinHits": 2,
+        "MaxHits": 5
+      }
+    ]
+  },
+  {
+    "Name": "DoubleTeam",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Self",
+        "Chance": null,
+        "Stages": 1,
+        "AffectedStat": "Evasion"
+      }
+    ]
+  },
+  {
+    "Name": "Double-Edge",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 120,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Recoil",
+        "Percent": 25
+      }
+    ]
+  },
+  {
+    "Name": "DragonRage",
+    "Type": "Dragon",
+    "Category": "Special",
+    "Power": null,
+    "Accuracy": 100,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "FixedDamage",
+        "FixedPower": 40
+      }
+    ]
+  },
+  {
+    "Name": "DrillPeck",
+    "Type": "Flying",
+    "Category": "Physical",
+    "Power": 80,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "Earthquake",
+    "Type": "Ground",
+    "Category": "Physical",
+    "Power": 100,
+    "Accuracy": 100,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "EggBomb",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 100,
+    "Accuracy": 75,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "Ember",
+    "Type": "Fire",
+    "Category": "Special",
+    "Power": 40,
+    "Accuracy": 100,
+    "Pp": 25,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Status": "Burn"
+      }
+    ]
+  },
+  {
+    "Name": "Explosion",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 250,
+    "Accuracy": 100,
+    "Pp": 5,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "SelfDestruct"
+      }
+    ]
+  },
+  {
+    "Name": "FireBlast",
+    "Type": "Fire",
+    "Category": "Special",
+    "Power": 120,
+    "Accuracy": 85,
+    "Pp": 5,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Status": "Burn"
+      }
+    ]
+  },
+  {
+    "Name": "FirePunch",
+    "Type": "Fire",
+    "Category": "Special",
+    "Power": 75,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Status": "Burn"
+      }
+    ]
+  },
+  {
+    "Name": "Fissure",
+    "Type": "Ground",
+    "Category": "Physical",
+    "Power": null,
+    "Accuracy": 30,
+    "Pp": 5,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "OneHitKo"
+      }
+    ]
+  },
+  {
+    "Name": "Flamethrower",
+    "Type": "Fire",
+    "Category": "Special",
+    "Power": 95,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Status": "Burn"
+      }
+    ]
+  },
+  {
+    "Name": "Flash",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": null,
+        "Stages": -1,
+        "AffectedStat": "Accuracy"
+      }
+    ]
+  },
+  {
+    "Name": "Fly",
+    "Type": "Flying",
+    "Category": "Physical",
+    "Power": 90,
+    "Accuracy": 95,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "ChargingTurn",
+        "SemiInvulnerableTurn": true
+      },
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "FuryAttack",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 15,
+    "Accuracy": 85,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Multistrike",
+        "CriticalRatio": "Standard",
+        "MinHits": 2,
+        "MaxHits": 5
+      }
+    ]
+  },
+  {
+    "Name": "FurySwipes",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 18,
+    "Accuracy": 80,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Multistrike",
+        "CriticalRatio": "Standard",
+        "MinHits": 2,
+        "MaxHits": 5
+      }
+    ]
+  },
+  {
+    "Name": "Glare",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": null,
+        "Status": "Paralysis"
+      }
+    ]
+  },
+  {
+    "Name": "Growl",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "Pp": 40,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": null,
+        "Stages": -1,
+        "AffectedStat": "Attack"
+      }
+    ]
+  },
+  {
+    "Name": "Growth",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 40,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Self",
+        "Chance": null,
+        "Stages": 1,
+        "AffectedStat": "SpAttack"
+      }
+    ]
+  },
+  {
+    "Name": "Guillotine",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": null,
+    "Accuracy": 30,
+    "Pp": 5,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "OneHitKo"
+      }
+    ]
+  },
+  {
+    "Name": "Gust",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 40,
+    "Accuracy": 100,
+    "Pp": 35,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "Harden",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Self",
+        "Chance": null,
+        "Stages": 1,
+        "AffectedStat": "Defense"
+      }
+    ]
+  },
+  {
+    "Name": "Haze",
+    "Type": "Ice",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "All",
+    "Effects": [
+      {
+        "EffectType": "StatChangeReset"
+      }
+    ]
+  },
+  {
+    "Name": "Headbutt",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 70,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 30,
+        "Status": "Flinch"
+      }
+    ]
+  },
+  {
+    "Name": "HornAttack",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 65,
+    "Accuracy": 100,
+    "Pp": 25,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "HornDrill",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": null,
+    "Accuracy": 30,
+    "Pp": 5,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "OneHitKo"
+      }
+    ]
+  },
+  {
+    "Name": "HydroPump",
+    "Type": "Water",
+    "Category": "Special",
+    "Power": 120,
+    "Accuracy": 80,
+    "Pp": 5,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "HyperBeam",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 150,
+    "Accuracy": 90,
+    "Pp": 5,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "ChargingTurn",
+        "SemiInvulnerableTurn": false
+      }
+    ]
+  },
+  {
+    "Name": "HyperFang",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 80,
+    "Accuracy": 90,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Status": "Flinch"
+      }
+    ]
+  },
+  {
+    "Name": "Hypnosis",
+    "Type": "Psychic",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 60,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": null,
+        "Status": "Sleep"
+      }
+    ]
+  },
+  {
+    "Name": "IceBeam",
+    "Type": "Ice",
+    "Category": "Special",
+    "Power": 95,
+    "Accuracy": 100,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Status": "Freeze"
+      }
+    ]
+  },
+  {
+    "Name": "IcePunch",
+    "Type": "Ice",
+    "Category": "Special",
+    "Power": 75,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Status": "Freeze"
+      }
+    ]
+  },
+  {
+    "Name": "Karate Chop",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 50,
+    "Accuracy": 100,
+    "Pp": 25,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "High"
+      }
+    ]
+  },
+  {
+    "Name": "Kinesis",
+    "Type": "Psychic",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 80,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": null,
+        "Stages": -1,
+        "AffectedStat": "Accuracy"
+      }
+    ]
+  },
+  {
+    "Name": "LeechLife",
+    "Type": "Bug",
+    "Category": "Physical",
+    "Power": 20,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Drain",
+        "Percent": 50
+      }
+    ]
+  },
+  {
+    "Name": "LeechSeed",
+    "Type": "Grass",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 90,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "LeechSeed"
+      }
+    ]
+  },
+  {
+    "Name": "Leer",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": null,
+        "Stages": -1,
+        "AffectedStat": "Defense"
+      }
+    ]
+  },
+  {
+    "Name": "Lick",
+    "Type": "Ghost",
+    "Category": "Physical",
+    "Power": 20,
+    "Accuracy": 100,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 30,
+        "Status": "Paralysis"
+      }
+    ]
+  },
+  {
+    "Name": "LightScreen",
+    "Type": "Psychic",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "DamageReduction",
+        "AffectedStat": "SpDefense",
+        "Duration": 5
+      }
+    ]
+  },
+  {
+    "Name": "LovelyKiss",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 75,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": null,
+        "Status": "Sleep"
+      }
+    ]
+  },
+  {
+    "Name": "LowKick",
+    "Type": "Fighting",
+    "Category": "Physical",
+    "Power": 50,
+    "Accuracy": 90,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "Meditate",
+    "Type": "Psychic",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 40,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Self",
+        "Chance": null,
+        "Stages": 1,
+        "AffectedStat": "Attack"
+      }
+    ]
+  },
+  {
+    "Name": "MegaDrain",
+    "Type": "Grass",
+    "Category": "Special",
+    "Power": 40,
+    "Accuracy": 100,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Drain",
+        "Percent": 50
+      }
+    ]
+  },
+  {
+    "Name": "MegaKick",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 120,
+    "Accuracy": 75,
+    "Pp": 5,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "MegaPunch",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 80,
+    "Accuracy": 85,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "Metronome",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "RandomMove"
+      }
+    ]
+  },
+  {
+    "Name": "Mimic",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "CopyMove",
+        "Replace": true
+      }
+    ]
+  },
+  {
+    "Name": "Minimize",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Self",
+        "Chance": null,
+        "Stages": 2,
+        "AffectedStat": "Evasion"
+      }
+    ]
+  },
+  {
+    "Name": "MirrorMove",
+    "Type": "Flying",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "CopyMove",
+        "Replace": false
+      }
+    ]
+  },
+  {
+    "Name": "NightShade",
+    "Type": "Ghost",
+    "Category": "Special",
+    "Power": null,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "FixedDamage",
+        "FixedPower": null
+      }
+    ]
+  },
+  {
+    "Name": "Peck",
+    "Type": "Flying",
+    "Category": "Physical",
+    "Power": 35,
+    "Accuracy": 100,
+    "Pp": 35,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "PetalDance",
+    "Type": "Grass",
+    "Category": "Special",
+    "Power": 70,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Fixated",
+        "MinHits": 3,
+        "MaxHits": 4
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Self",
+        "Chance": null,
+        "Status": "Confusion"
+      }
+    ]
+  },
+  {
+    "Name": "PinMissile",
+    "Type": "Bug",
+    "Category": "Physical",
+    "Power": 14,
+    "Accuracy": 85,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Multistrike",
+        "CriticalRatio": "Standard",
+        "MinHits": 2,
+        "MaxHits": 5
+      }
+    ]
+  },
+  {
+    "Name": "PoisonGas",
+    "Type": "Poison",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 90,
+    "Pp": 40,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": null,
+        "Status": "Poison"
+      }
+    ]
+  },
+  {
+    "Name": "PoisonPowder",
+    "Type": "Poison",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 55,
+    "Pp": 35,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": null,
+        "Status": "Poison"
+      }
+    ]
+  },
+  {
+    "Name": "PoisonSting",
+    "Type": "Poison",
+    "Category": "Physical",
+    "Power": 15,
+    "Accuracy": 100,
+    "Pp": 35,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 30,
+        "Status": "Poison"
+      }
+    ]
+  },
+  {
+    "Name": "Pound",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 40,
+    "Accuracy": 100,
+    "Pp": 35,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "Psybeam",
+    "Type": "Psychic",
+    "Category": "Special",
+    "Power": 65,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Status": "Confusion"
+      }
+    ]
+  },
+  {
+    "Name": "Psychic",
+    "Type": "Psychic",
+    "Category": "Special",
+    "Power": 90,
+    "Accuracy": 100,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": 30,
+        "Stages": -1,
+        "AffectedStat": "SpDefense"
+      }
+    ]
+  },
+  {
+    "Name": "QuickAttack",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 40,
+    "Accuracy": 100,
+    "Pp": 30,
+    "Priority": 1,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "RazorLeaf",
+    "Type": "Grass",
+    "Category": "Special",
+    "Power": 55,
+    "Accuracy": 95,
+    "Pp": 25,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "High"
+      }
+    ]
+  },
+  {
+    "Name": "RazorWind",
+    "Type": "Normal",
+    "Category": "Special",
+    "Power": 80,
+    "Accuracy": 100,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "ChargingTurn",
+        "SemiInvulnerableTurn": false
+      },
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "High"
+      }
+    ]
+  },
+  {
+    "Name": "Recover",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "RecoverHp",
+        "Percent": 50
+      }
+    ]
+  },
+  {
+    "Name": "Reflect",
+    "Type": "Psychic",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "DamageReduction",
+        "AffectedStat": "Defense",
+        "Duration": 5
+      }
+    ]
+  },
+  {
+    "Name": "Rest",
+    "Type": "Psychic",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 5,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "Status",
+        "Target": "Self",
+        "Chance": null,
+        "Status": "Sleep"
+      },
+      {
+        "EffectType": "RecoverHp",
+        "Percent": 100
+      }
+    ]
+  },
+  {
+    "Name": "RockSlide",
+    "Type": "Rock",
+    "Category": "Physical",
+    "Power": 75,
+    "Accuracy": 90,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 30,
+        "Status": "Flinch"
+      }
+    ]
+  },
+  {
+    "Name": "RockThrow",
+    "Type": "Rock",
+    "Category": "Physical",
+    "Power": 50,
+    "Accuracy": 65,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "RollingKick",
+    "Type": "Fighting",
+    "Category": "Physical",
+    "Power": 60,
+    "Accuracy": 85,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 30,
+        "Status": "Flinch"
+      }
+    ]
+  },
+  {
+    "Name": "Sand-Attack",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": null,
+        "Stages": -1,
+        "AffectedStat": "Accuracy"
+      }
+    ]
+  },
+  {
+    "Name": "Scratch",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 40,
+    "Accuracy": 100,
+    "Pp": 35,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "Screech",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 85,
+    "Pp": 40,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": null,
+        "Stages": -2,
+        "AffectedStat": "Defense"
+      }
+    ]
+  },
+  {
+    "Name": "SeismicToss",
+    "Type": "Fighting",
+    "Category": "Physical",
+    "Power": null,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "FixedDamage",
+        "FixedPower": null
+      }
+    ]
+  },
+  {
+    "Name": "Selfdestruct",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 200,
+    "Accuracy": 100,
+    "Pp": 5,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "SelfDestruct"
+      }
+    ]
+  },
+  {
+    "Name": "Sharpen",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Self",
+        "Chance": null,
+        "Stages": 1,
+        "AffectedStat": "Attack"
+      }
+    ]
+  },
+  {
+    "Name": "Sing",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 55,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": null,
+        "Status": "Sleep"
+      }
+    ]
+  },
+  {
+    "Name": "SkullBash",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 100,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "ChargingTurn",
+        "SemiInvulnerableTurn": false
+      },
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "SkyAttack",
+    "Type": "Flying",
+    "Category": "Physical",
+    "Power": 140,
+    "Accuracy": 90,
+    "Pp": 5,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "ChargingTurn",
+        "SemiInvulnerableTurn": false
+      },
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 30,
+        "Status": "Flinch"
+      }
+    ]
+  },
+  {
+    "Name": "Slam",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 80,
+    "Accuracy": 75,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "Slash",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 70,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "High"
+      }
+    ]
+  },
+  {
+    "Name": "SleepPowder",
+    "Type": "Grass",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 75,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": null,
+        "Status": "Sleep"
+      }
+    ]
+  },
+  {
+    "Name": "Sludge",
+    "Type": "Poison",
+    "Category": "Physical",
+    "Power": 65,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 30,
+        "Status": "Poison"
+      }
+    ]
+  },
+  {
+    "Name": "Smog",
+    "Type": "Poison",
+    "Category": "Physical",
+    "Power": 20,
+    "Accuracy": 70,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 40,
+        "Status": "Poison"
+      }
+    ]
+  },
+  {
+    "Name": "Smokescreen",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": null,
+        "Stages": -1,
+        "AffectedStat": "Accuracy"
+      }
+    ]
+  },
+  {
+    "Name": "Soft-Boiled",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 5,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "RecoverHp",
+        "Percent": 50
+      }
+    ]
+  },
+  {
+    "Name": "SolarBeam",
+    "Type": "Grass",
+    "Category": "Special",
+    "Power": 120,
+    "Accuracy": 100,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "ChargingTurn",
+        "SemiInvulnerableTurn": false
+      },
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "SonicBoom",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": null,
+    "Accuracy": 90,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "FixedDamage",
+        "FixedPower": 20
+      }
+    ]
+  },
+  {
+    "Name": "SpikeCannon",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 20,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Multistrike",
+        "CriticalRatio": "Standard",
+        "MinHits": 2,
+        "MaxHits": 5
+      }
+    ]
+  },
+  {
+    "Name": "Splash",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 40,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": []
+  },
+  {
+    "Name": "Spore",
+    "Type": "Grass",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": null,
+        "Status": "Sleep"
+      }
+    ]
+  },
+  {
+    "Name": "Stomp",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 65,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 30,
+        "Status": "Flinch"
+      }
+    ]
+  },
+  {
+    "Name": "Strength",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 80,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "StringShot",
+    "Type": "Bug",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 95,
+    "Pp": 40,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": null,
+        "Stages": -2,
+        "AffectedStat": "Speed"
+      }
+    ]
+  },
+  {
+    "Name": "StunSpore",
+    "Type": "Grass",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 75,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": null,
+        "Status": "Paralysis"
+      }
+    ]
+  },
+  {
+    "Name": "Submission",
+    "Type": "Fighting",
+    "Category": "Physical",
+    "Power": 80,
+    "Accuracy": 80,
+    "Pp": 25,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Recoil",
+        "Percent": 25
+      }
+    ]
+  },
+  {
+    "Name": "SuperFang",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": null,
+    "Accuracy": 90,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "CutHalfHp"
+      }
+    ]
+  },
+  {
+    "Name": "Supersonic",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 55,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": null,
+        "Status": "Confusion"
+      }
+    ]
+  },
+  {
+    "Name": "Surf",
+    "Type": "Water",
+    "Category": "Special",
+    "Power": 90,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "Swift",
+    "Type": "Normal",
+    "Category": "Special",
+    "Power": 60,
+    "Accuracy": null,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "SwordsDance",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Self",
+        "Chance": null,
+        "Stages": 2,
+        "AffectedStat": "Attack"
+      }
+    ]
+  },
+  {
+    "Name": "Tackle",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 40,
+    "Accuracy": 100,
+    "Pp": 35,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "TailWhip",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Enemy",
+        "Chance": null,
+        "Stages": -1,
+        "AffectedStat": "Defense"
+      }
+    ]
+  },
+  {
+    "Name": "TakeDown",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 90,
+    "Accuracy": 85,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Recoil",
+        "Percent": 25
+      }
+    ]
+  },
+  {
+    "Name": "Thrash",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 90,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Fixated",
+        "MinHits": 3,
+        "MaxHits": 4
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Self",
+        "Chance": null,
+        "Status": "Confusion"
+      }
+    ]
+  },
+  {
+    "Name": "Thunder",
+    "Type": "Electric",
+    "Category": "Special",
+    "Power": 120,
+    "Accuracy": 70,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Status": "Paralysis"
+      }
+    ]
+  },
+  {
+    "Name": "ThunderPunch",
+    "Type": "Electric",
+    "Category": "Special",
+    "Power": 75,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Status": "Paralysis"
+      }
+    ]
+  },
+  {
+    "Name": "ThunderShock",
+    "Type": "Electric",
+    "Category": "Special",
+    "Power": 40,
+    "Accuracy": 100,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Status": "Paralysis"
+      }
+    ]
+  },
+  {
+    "Name": "ThunderWave",
+    "Type": "Electric",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": null,
+        "Status": "Paralysis"
+      }
+    ]
+  },
+  {
+    "Name": "Thunderbolt",
+    "Type": "Electric",
+    "Category": "Special",
+    "Power": 95,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 10,
+        "Status": "Paralysis"
+      }
+    ]
+  },
+  {
+    "Name": "Toxic",
+    "Type": "Poison",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": 85,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": null,
+        "Status": "BadlyPoison"
+      }
+    ]
+  },
+  {
+    "Name": "Transform",
+    "Type": "Normal",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Transform"
+      }
+    ]
+  },
+  {
+    "Name": "TriAttack",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 80,
+    "Accuracy": 100,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 7,
+        "Status": "Burn"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 7,
+        "Status": "Freeze"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 7,
+        "Status": "Paralysis"
+      }
+    ]
+  },
+  {
+    "Name": "Twineedle",
+    "Type": "Bug",
+    "Category": "Physical",
+    "Power": 25,
+    "Accuracy": 100,
+    "Pp": 20,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Multistrike",
+        "CriticalRatio": "Standard",
+        "MinHits": 2,
+        "MaxHits": 2
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 40,
+        "Status": "Poison"
+      }
+    ]
+  },
+  {
+    "Name": "VineWhip",
+    "Type": "Grass",
+    "Category": "Special",
+    "Power": 35,
+    "Accuracy": 100,
+    "Pp": 10,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "ViseGrip",
+    "Type": "Normal",
+    "Category": "Physical",
+    "Power": 55,
+    "Accuracy": 100,
+    "Pp": 30,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "WaterGun",
+    "Type": "Water",
+    "Category": "Special",
+    "Power": 40,
+    "Accuracy": 100,
+    "Pp": 25,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "Waterfall",
+    "Type": "Water",
+    "Category": "Special",
+    "Power": 80,
+    "Accuracy": 100,
+    "Pp": 15,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      },
+      {
+        "EffectType": "Status",
+        "Target": "Enemy",
+        "Chance": 20,
+        "Status": "Flinch"
+      }
+    ]
+  },
+  {
+    "Name": "WingAttack",
+    "Type": "Flying",
+    "Category": "Physical",
+    "Power": 60,
+    "Accuracy": 100,
+    "Pp": 35,
+    "Priority": 0,
+    "Target": "Enemy",
+    "Effects": [
+      {
+        "EffectType": "Damage",
+        "CriticalRatio": "Standard"
+      }
+    ]
+  },
+  {
+    "Name": "Withdraw",
+    "Type": "Water",
+    "Category": "Status",
+    "Power": null,
+    "Accuracy": null,
+    "Pp": 40,
+    "Priority": 0,
+    "Target": "Self",
+    "Effects": [
+      {
+        "EffectType": "StatChange",
+        "Target": "Self",
+        "Chance": null,
+        "Stages": 1,
+        "AffectedStat": "Defense"
+      }
+    ]
+  }
+]
