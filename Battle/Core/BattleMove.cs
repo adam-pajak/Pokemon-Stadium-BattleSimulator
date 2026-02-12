@@ -1,5 +1,6 @@
 using System.Reflection.Metadata;
 using PokemonStadium.Battle.Calculators;
+using PokemonStadium.Models.Enums;
 using PokemonStadium.Models.Moves;
 using PokemonStadium.Models.Moves.Effects;
 
@@ -35,10 +36,10 @@ public class BattleMove
     }
     public void Use(BattleContext context)
     {
-        context.Move = this; // nadpisujemy, aby upewnić się, że context zawiera prawidłowe informacje;
-        if (!context.Attacker.IsRecharging)
+        context.Move = this; // Nadpisujemy, aby upewnić się, że context zawiera prawidłowe informacje do przekazania do efektów
+        if (!context.Attacker.ActivePokemon.IsRecharging)
         {
-            context.Log($"{context.Attacker.Species.Name} used {Property.Name}!");
+            context.Log($"{context.Attacker.ActivePokemon.Species.Name} used {Property.Name}!");
             if (CanBeUsed())
             {
                 bool hit = AccuracyCalculator.DoesMoveHit(context);
@@ -47,8 +48,9 @@ public class BattleMove
                     foreach (var effect in Property.Effects)
                     {
                         effect.Apply(context);
-                        if (context.Attacker.IsCharging) break;
+                        if (context.Attacker.ActivePokemon.IsCharging) break;
                     }
+                    if (context.Move.Property.Category == MoveCategory.Status) context.LastDamage = null;
                 }
                 else // ChargingTurnEffect oraz SelfDestructEffect wykonują się zawsze nawet jak ruch nie trafi
                 {
@@ -56,14 +58,15 @@ public class BattleMove
                     foreach (var alwaysEffect in alwaysEffects)
                     {
                         alwaysEffect.Apply(context);
-                        if (context.Attacker.IsCharging) break;
+                        if (context.Attacker.ActivePokemon.IsCharging) break;
                     }
-                    // Pomijamy wiadomość tylko wtedy, gdy jest to pierwsza tura ładowanego ataku
-                    if (alwaysEffects.Any(e => e is ChargingTurnEffect) && context.Attacker.IsCharging)
+                    // Pomijamy wiadomość i nie wykorzystujemy PP tylko wtedy, gdy jest to pierwsza tura ładowanego ataku
+                    if (alwaysEffects.Any(e => e is ChargingTurnEffect) && context.Attacker.ActivePokemon.IsCharging)
                     {
                         _currentPp++;
                     }
-                    else context.Log($"{context.Defender.Species.Name} avoided the attack!");
+                    else context.Log($"{context.Defender.ActivePokemon.Species.Name} avoided the attack!");
+
                     context.LastDamage = null;
                 }
                 context.LastMove = this;

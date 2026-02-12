@@ -17,8 +17,8 @@ public class RecoilEffect : IMoveEffect
         if (damageDealt <= 0) return;
         int recoil = damageDealt * _percent / 100;
         if (recoil <= 0) return;
-        int damageTaken = context.Attacker.TakeDamage((byte)recoil);
-        context.Log($"{context.Attacker.Species.Name}'s hit with {damageTaken} recoil!");
-        if (context.Attacker.IsFainted) context.Log($"{context.Attacker.Species.Name} fainted.");
+        int damageTaken = context.Attacker.ActivePokemon.TakeDamage((byte)recoil);
+        context.Log($"{context.Attacker.ActivePokemon.Species.Name}'s hit with {damageTaken} recoil!");
+        if (context.Attacker.ActivePokemon.IsFainted) context.Log($"{context.Attacker.ActivePokemon.Species.Name} fainted.");
     }
 }

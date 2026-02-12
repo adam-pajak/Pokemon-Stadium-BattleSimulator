@@ -9,17 +9,17 @@ public static class DamageCalculator
     {
         int power = context.Move.Property.Power ?? 0;
         
-        int level = context.Attacker.Level;
+        int level = context.Attacker.ActivePokemon.Level;
         
         int critical = isCritical ? 2 : 1;
         
         int attack = context.Move.Property.Category == MoveCategory.Physical
-            ? context.Attacker.GetAttack(isCritical)
-            : context.Attacker.GetSpAttack(isCritical);
+            ? context.Attacker.ActivePokemon.GetAttack(isCritical)
+            : context.Attacker.ActivePokemon.GetSpAttack(isCritical);
         
         int defense = context.Move.Property.Category == MoveCategory.Physical
-            ? context.Defender.GetDefense(isCritical)
-            : context.Defender.GetSpDefense(isCritical);
+            ? context.Defender.ActivePokemon.GetDefense(isCritical)
+            : context.Defender.ActivePokemon.GetSpDefense(isCritical);
         
         if (attack > 255 || defense > 255)
         {
@@ -28,7 +28,7 @@ public static class DamageCalculator
         }
         int damage = (2 * level * critical / 5 + 2) * power * attack / defense / 50 + 2;
         
-        if (context.Attacker.Types.Contains(context.Move.Property.Type)) damage = (damage * 3) / 2;
+        if (context.Attacker.ActivePokemon.Types.Contains(context.Move.Property.Type)) damage = (damage * 3) / 2;
         
         if (typeEffectiveness == 0) return 0;
         

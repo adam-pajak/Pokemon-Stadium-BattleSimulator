@@ -100,11 +100,26 @@ internal static class Program
         player.Pokemons.ForEach( p => Console.WriteLine($"- {p.Species.Name}"));
         Console.WriteLine($"Team {computer.Name}");
         computer.Pokemons.ForEach( p => Console.WriteLine($"- {p.Species.Name}"));
+        Console.CursorVisible = false;
         Thread.Sleep(5000);
         Console.Clear();
+        Console.CursorVisible = true;
         SlowWrite($"{computer.Name} wants to fight!");
         Game.Context = new BattleContext {AllMoves = moves};
         while (Game.PlayRound(player, computer)) ;
-        
+        Console.WriteLine("Would you like to review the battle?");
+        Console.WriteLine("1. Yes | 2. No");
+        do
+        {
+            input = Console.ReadLine();
+        } while (!int.TryParse(input, out number) || number <  1 || number > 2);
+        Console.Clear();
+        if (number == 1)
+        {
+            foreach (var msg in Game.Context.LogMessages)
+            {
+                SlowWrite(msg);
+            }
+        }
     }
 }

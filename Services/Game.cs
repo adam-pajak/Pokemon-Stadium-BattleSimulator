@@ -122,19 +122,10 @@ public static class Game
 
     private static void AttackAction(BattleMove move, Trainer attacker, Trainer defender)
     {
-        Context.Refresh(attacker.ActivePokemon, defender.ActivePokemon, move);
+        Context.Refresh(attacker, defender, move);
         if (!SwitchPokemonIfRequired(attacker))
         {
             Context.Move.Use(Context);
-
-            if (Context.Attacker.IsCharging || Context.Attacker.IsRecharging)
-            {
-                attacker.LockChoice = true;
-            }
-            else
-            {
-                attacker.LockChoice = false;
-            }
             attacker.LastAction = Context.LastMove;
         }
     }

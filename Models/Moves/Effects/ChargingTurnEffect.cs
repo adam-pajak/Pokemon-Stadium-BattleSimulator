@@ -11,17 +11,27 @@ public class ChargingTurnEffect : IMoveEffect
     }
     public void Apply(BattleContext context)
     {
-        if (_semiInvulnerableTurn) context.Attacker.IsInvulnerable = !context.Attacker.IsInvulnerable;
+        if (_semiInvulnerableTurn) context.Attacker.ActivePokemon.IsInvulnerable = !context.Attacker.ActivePokemon.IsInvulnerable;
         string moveName = context.Move.Property.Name;
         if (moveName == "HyperBeam") // przeładowanie: HyperBeam, GigaImpact, etc.
         {
-            if (context.Attacker.IsRecharging) context.Log($"{context.Attacker.Species.Name} {GetLogMessage(moveName)}");
-            context.Attacker.IsRecharging = !context.Attacker.IsRecharging;
+            if (context.Attacker.ActivePokemon.IsRecharging)
+            {
+                context.Log($"{context.Attacker.ActivePokemon.Species.Name} {GetLogMessage(moveName)}");
+                context.Attacker.LockChoice = false;
+            }
+            else context.Attacker.LockChoice = true;
+            context.Attacker.ActivePokemon.IsRecharging = !context.Attacker.ActivePokemon.IsRecharging;
         }
         else
         {
-            context.Attacker.IsCharging = !context.Attacker.IsCharging;
-            if (context.Attacker.IsCharging) context.Log($"{context.Attacker.Species.Name} {GetLogMessage(moveName)}");
+            context.Attacker.ActivePokemon.IsCharging = !context.Attacker.ActivePokemon.IsCharging;
+            if (context.Attacker.ActivePokemon.IsCharging)
+            {
+                context.Log($"{context.Attacker.ActivePokemon.Species.Name} {GetLogMessage(moveName)}");
+                context.Attacker.LockChoice = true;
+            }
+            else context.Attacker.LockChoice = false;
         }
     }
     private string GetLogMessage(string moveName)

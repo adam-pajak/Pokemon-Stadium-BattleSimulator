@@ -10,7 +10,7 @@ public static class CriticalHitCalculator
 
     public static bool IsCriticalHit(BattleContext context, CriticalRatio ratio)
     {
-        int speed = context.Attacker.Species.BaseStats.Speed;
+        int speed = context.Attacker.ActivePokemon.Species.BaseStats.Speed;
 
         int threshold = (speed + 76) / 4;
 

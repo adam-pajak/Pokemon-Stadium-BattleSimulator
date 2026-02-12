@@ -14,14 +14,14 @@ public class FixedDamageEffect : IMoveEffect
     public void Apply(BattleContext context)
     {
         int fixedDamage;
-        if (_fixedPower is null) fixedDamage = context.Attacker.Level;
+        if (_fixedPower is null) fixedDamage = context.Attacker.ActivePokemon.Level;
         else fixedDamage = _fixedPower.Value;
-        int damageTaken = context.Defender.TakeDamage((byte)fixedDamage);
+        int damageTaken = context.Defender.ActivePokemon.TakeDamage((byte)fixedDamage);
         if (damageTaken > 0)
         {
-            context.Log($"{context.Defender.Species.Name} received {damageTaken} damage!");
+            context.Log($"{context.Defender.ActivePokemon.Species.Name} received {damageTaken} damage!");
         }
-        if (context.Defender.IsFainted) context.Log($"{context.Defender.Species.Name} fainted.");
+        if (context.Defender.ActivePokemon.IsFainted) context.Log($"{context.Defender.ActivePokemon.Species.Name} fainted.");
         context.LastDamage = damageTaken;
     }
 }

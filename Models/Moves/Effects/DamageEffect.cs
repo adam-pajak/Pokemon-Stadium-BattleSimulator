@@ -13,18 +13,18 @@ public class DamageEffect : IMoveEffect
     }
     public void Apply(BattleContext context)
     {
-        double effectiveness = TypeEffectivenessChart.GetMultiplier(context.Move.Property.Type, context.Defender.Types);
+        double effectiveness = TypeEffectivenessChart.GetMultiplier(context.Move.Property.Type, context.Defender.ActivePokemon.Types);
         var msg = TypeEffectivenessChart.GetLogMessage(effectiveness);
         if (msg is not null) context.Log(msg);
         bool isCritical = CriticalHitCalculator.IsCriticalHit(context, _criticalRatio);
         if (isCritical) context.Log("Critical hit!");
         byte damage = DamageCalculator.Calculate(context, isCritical, effectiveness);
-        int damageTaken = context.Defender.TakeDamage(damage);
+        int damageTaken = context.Defender.ActivePokemon.TakeDamage(damage);
         if (damageTaken > 0)
         {
-            context.Log($"{context.Defender.Species.Name} received {damageTaken} damage!");
+            context.Log($"{context.Defender.ActivePokemon.Species.Name} received {damageTaken} damage!");
         }
-        if (context.Defender.IsFainted) context.Log($"{context.Defender.Species.Name} fainted!");
+        if (context.Defender.ActivePokemon.IsFainted) context.Log($"{context.Defender.ActivePokemon.Species.Name} fainted!");
         context.LastDamage = damageTaken;
     }
 }

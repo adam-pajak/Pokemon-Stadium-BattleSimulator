@@ -26,13 +26,13 @@ public class StatChangeEffect : IMoveEffect
             switch (_target)
             {
                 case Targets.Enemy:
-                    target = context.Defender;
+                    target = context.Defender.ActivePokemon;
                     break;
                 case Targets.Self:
-                    target = context.Attacker;
+                    target = context.Attacker.ActivePokemon;
                     break;
                 case Targets.All:
-                    throw new NotSupportedException("Stat change effect currently works only on one target.");
+                    throw new NotImplementedException("Stat change effect currently works only on one target.");
                 default:
                     throw new InvalidDataException($"Invalid target type: {_target}");
             }

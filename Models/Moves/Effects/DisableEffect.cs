@@ -17,11 +17,11 @@ public class DisableEffect : IMoveEffect
         {
             int duration = context.Range.Next(0, 7);
             lastMove.Disable(duration);
-            context.Log($"{context.Attacker.Species.Name}'s {lastMove.Property.Name} was disabled!");
+            context.Log($"{context.Attacker.ActivePokemon.Species.Name}'s {lastMove.Property.Name} was disabled!");
         }
         else
         {
-            context.Log($"{context.Attacker.Species.Name}'s {lastMove.Property.Name} is already disabled!");
+            context.Log($"{context.Attacker.ActivePokemon.Species.Name}'s {lastMove.Property.Name} is already disabled!");
         }
     }
 }

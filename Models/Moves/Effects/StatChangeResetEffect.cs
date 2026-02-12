@@ -7,8 +7,8 @@ public class StatChangeResetEffect : IMoveEffect
     public StatChangeResetEffect() { }
     public void Apply(BattleContext context)
     {
-        context.Attacker.StatStages.Reset();
-        context.Defender.StatStages.Reset();
+        context.Attacker.ActivePokemon.StatStages.Reset();
+        context.Defender.ActivePokemon.StatStages.Reset();
         context.Log("All stat changes have been reset!");
     }
 }

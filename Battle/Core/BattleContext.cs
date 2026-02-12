@@ -1,13 +1,12 @@
-using PokemonStadium.Battle.Calculators;
-using PokemonStadium.Models;
+using PokemonStadium.Battle.Trainers;
 using PokemonStadium.Models.Moves;
 
 namespace PokemonStadium.Battle.Core;
 
 public class BattleContext
 {
-    public BattlePokemon Attacker = null!;
-    public BattlePokemon Defender = null!;
+    public Trainer Attacker = null!;
+    public Trainer Defender = null!;
     public BattleMove Move = null!;
     public Random Range = new();
     
@@ -15,10 +14,10 @@ public class BattleContext
     public BattleMove? LastMove { get; set; } // mimic, mirrorMove etc. (CopyMoveEffect)
     public required Dictionary<string, Move> AllMoves { get; init; } // metronome (RandomMoveEffect)
     private int _turn;
-    public List<string> LogMessages { get; set; } = new();
+    public List<string> LogMessages { get; } = [];
     
 
-    public void Refresh(BattlePokemon attacker, BattlePokemon defender, BattleMove move)
+    public void Refresh(Trainer attacker, Trainer defender, BattleMove move)
     {
         Attacker = attacker;
         Defender = defender;
@@ -49,8 +48,8 @@ public class BattleContext
     {
         if (_turn > 0)
         {
-            CheckDisabledMoves(Attacker);
-            CheckDisabledMoves(Defender);
+            CheckDisabledMoves(Attacker.ActivePokemon);
+            CheckDisabledMoves(Defender.ActivePokemon);
         }
         _turn++;
     }

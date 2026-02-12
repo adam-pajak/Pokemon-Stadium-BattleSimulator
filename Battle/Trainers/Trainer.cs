@@ -28,11 +28,10 @@ public abstract class Trainer
         return Pokemons.FindAll(p => !p.IsFainted && p != ActivePokemon);
     }
 
-    public BattlePokemon SetActivePokemon(BattlePokemon pokemon)
+    public void SetActivePokemon(BattlePokemon pokemon)
     {
         pokemon.SwitchedOut();
         ActivePokemon = pokemon;
-        return ActivePokemon;
     }
 
     

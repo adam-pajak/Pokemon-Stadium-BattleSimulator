@@ -18,7 +18,7 @@ public class MultistrikeEffect : IMoveEffect
     }
     public void Apply(BattleContext context)
     {
-        double effectiveness = TypeEffectivenessChart.GetMultiplier(context.Move.Property.Type, context.Defender.Types);
+        double effectiveness = TypeEffectivenessChart.GetMultiplier(context.Move.Property.Type, context.Defender.ActivePokemon.Types);
         bool isCritical = CriticalHitCalculator.IsCriticalHit(context, _criticalRatio);
         int hits;
         if (_minHits == 2 && _maxHits == 5)
@@ -27,23 +27,23 @@ public class MultistrikeEffect : IMoveEffect
         }
         else
         {
-            hits = 2;
+            hits = context.Range.Next(_minHits, _maxHits + 1);
         }
         int h;
         for (h = 0; h < hits; h++)
         {
             byte damage = DamageCalculator.Calculate(context, isCritical, effectiveness);
-            int damageTaken = context.Defender.TakeDamage(damage);
+            int damageTaken = context.Defender.ActivePokemon.TakeDamage(damage);
             if (damage > 0)
             {
-                context.Log($"{context.Defender.Species.Name} received {damageTaken} damage!");
-            }
-            if (context.Defender.IsFainted)
-            {
-                context.Log($"{context.Defender.Species.Name} fainted.");
-                break;
+                context.Log($"{context.Defender.ActivePokemon.Species.Name} received {damageTaken} damage!");
             }
             context.LastDamage = damageTaken;
+            if (context.Defender.ActivePokemon.IsFainted)
+            {
+                context.Log($"{context.Defender.ActivePokemon.Species.Name} fainted.");
+                break;
+            }
         }
 
         if (h > 0)

@@ -12,9 +12,9 @@ public class DrainEffect : IMoveEffect
     }
     public void Apply(BattleContext context)
     {
-        if (context.Attacker.Stats.MaxHp == context.Attacker.CurrentHp)
+        if (context.Attacker.ActivePokemon.Stats.MaxHp == context.Attacker.ActivePokemon.CurrentHp)
         {
-            context.Log($"{context.Attacker.Species.Name} hp is full.");
+            context.Log($"{context.Attacker.ActivePokemon.Species.Name} hp is full!");
             return;
         }
         if (context.LastDamage is null) return;
@@ -22,7 +22,7 @@ public class DrainEffect : IMoveEffect
         if (damageDealt <= 0) return; 
         int heal = damageDealt * _percent / 100;
         if (heal <= 0) return;
-        int restoredHp = context.Attacker.RestoreHp(heal);
-        context.Log($"{context.Attacker.Species.Name} drained {restoredHp} energy.");
+        int restoredHp = context.Attacker.ActivePokemon.RestoreHp(heal);
+        context.Log($"{context.Attacker.ActivePokemon.Species.Name} drained {restoredHp} energy!");
     }
 }

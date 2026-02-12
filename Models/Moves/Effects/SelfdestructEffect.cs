@@ -7,7 +7,7 @@ public class SelfdestructEffect : IMoveEffect
     public SelfdestructEffect() { }
     public void Apply(BattleContext context)
     {
-        context.Attacker.Knockout();
-        context.Log($"{context.Attacker.Species.Name} fainted!");
+        context.Attacker.ActivePokemon.Knockout();
+        context.Log($"{context.Attacker.ActivePokemon.Species.Name} fainted!");
     }
 }

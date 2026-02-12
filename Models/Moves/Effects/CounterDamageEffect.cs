@@ -18,10 +18,10 @@ public class CounterDamageEffect : IMoveEffect
             context.Log("But it failed!");
             return;
         }
-        context.Log($"{context.Attacker.Species.Name} countered {context.LastMove.Property.Name}!");
-        int takenDamage = context.Defender.TakeDamage((byte)(context.LastDamage * 2));
-        context.Log($"{context.Defender.Species.Name} received {takenDamage} damage!");
-        if (context.Defender.IsFainted) context.Log($"{context.Defender.Species.Name} fainted!");
+        context.Log($"{context.Attacker.ActivePokemon.Species.Name} countered {context.LastMove.Property.Name}!");
+        int takenDamage = context.Defender.ActivePokemon.TakeDamage((byte)(context.LastDamage * 2));
+        context.Log($"{context.Defender.ActivePokemon.Species.Name} received {takenDamage} damage!");
+        if (context.Defender.ActivePokemon.IsFainted) context.Log($"{context.Defender.ActivePokemon.Species.Name} fainted!");
     
     }
 }

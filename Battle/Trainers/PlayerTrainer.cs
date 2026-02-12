@@ -11,7 +11,9 @@ public class PlayerTrainer : Trainer
     {
         if (LockChoice)
         {
+            Console.CursorVisible = false;
             Thread.Sleep(2000);
+            Console.CursorVisible = true;
             return LastAction;
         }
         if (CanSwitchPokemon())
