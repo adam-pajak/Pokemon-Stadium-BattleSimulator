@@ -91,8 +91,8 @@ Responsibilities:
 
 Typical data stored in `BattleContext`:
 - current turn number
-- battle field effects (Reflect/Light Screen etc.)[^1]
-- information needed across multiple turns (LastMove/LastDamage/etc.)
+- short-term information - (`Trainer`)attacker, defender, move
+- information needed across multiple turns (`LastMove`/`LastDamage`/etc.)
 
 ---
 
