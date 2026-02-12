@@ -91,7 +91,7 @@ Responsibilities:
 
 Typical data stored in `BattleContext`:
 - current turn number
-- battle field effects (Reflect/Light Screen etc.)[^*]
+- battle field effects (Reflect/Light Screen etc.)[^1]
 - information needed across multiple turns (LastMove/LastDamage/etc.)
 
 ---
@@ -102,7 +102,7 @@ Typical data stored in `BattleContext`:
 Responsibilities:
 - stores current HP
 - stores stats and stat stages (Attack/Defense/etc.)
-- stores active status conditions[^*]
+- stores active status conditions[^1]
 - stores current move set
 - stores current types (which can change during the battle)
 - provides helper methods for applying damage and stat changes
@@ -165,7 +165,7 @@ Each turn consists of:
 Turn order is affected by:
 - Speed stat (after modifiers)
 - move priority
-- status conditions (example: paralysis speed reduction)[^*]
+- status conditions (example: paralysis speed reduction)[^1]
 
 ---
 
@@ -327,4 +327,4 @@ This structure allows the battle simulator to grow into a complete Pokémon batt
 
 ---
 
-[^*]: Not implemented.
+[^1]: Not implemented.
