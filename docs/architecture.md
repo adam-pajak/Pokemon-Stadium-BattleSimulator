@@ -306,7 +306,7 @@ Main design goals of this project:
 ## 15. Future Improvements
 
 Planned improvements:
-- fully implemented status conditions (turn-based)
+- fully implemented status conditions
 - UI improvements (HP bars)
 - more Pokémon generations
 - more move effects
