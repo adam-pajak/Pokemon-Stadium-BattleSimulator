@@ -37,7 +37,6 @@ It can be treated as the "battle memory".
 Examples:
 - current turn number
 - field effects that affects both sides (Weather[^1], Terrains[^2], etc.)
-- global battle flags
 - references to trainers
 
 ### Why BattleContext exists
