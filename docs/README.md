@@ -32,4 +32,4 @@ This folder contains technical documentation for the **Pokémon Stadium Battle S
 - [How DataLoader Works](data-loader.md)
 
 ### 6. Development Notes
-- [Future Plans / TODO](coming soon)
+- Future Plans / TODO(coming soon)
