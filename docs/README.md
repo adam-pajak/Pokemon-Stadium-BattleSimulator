@@ -14,7 +14,7 @@ This folder contains technical documentation for the **Pokémon Stadium Battle S
 - [Battle Core (BattleContext, BattlePokemon, BattleMove)](battle-core.md)
 - [Trainers System](trainers.md)
 - [Stats System](stats.md)
-- [Status Conditions](statuses.md)
+- Status Conditions(coming soon)
 
 ### 3. Moves System
 - [Move Model and Execution](moves.md)
@@ -32,5 +32,4 @@ This folder contains technical documentation for the **Pokémon Stadium Battle S
 - [How DataLoader Works](data-loader.md)
 
 ### 6. Development Notes
-- [Coding Conventions](conventions.md)
-- [Future Plans / TODO](roadmap.md)
+- [Future Plans / TODO](coming soon)
