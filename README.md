@@ -85,7 +85,7 @@ dotnet --version
 1. Clone repository:
 ```bash
 git clone https://github.com/adam-pajak/Pokemon-Stadium-BattleSimulator.git
-cd PokemonStadiumSrc
+cd Pokemon-Stadium-BattleSimulator
 ```
 2. Build:
 ```bash
