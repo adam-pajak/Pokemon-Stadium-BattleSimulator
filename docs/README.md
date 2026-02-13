@@ -1,6 +1,6 @@
 # Technical Documentation
 
-This folder contains technical documentation for the **Pokemon Stadium Battle Simulator** project.
+This folder contains technical documentation for the **Pokémon Stadium Battle Simulator** project.
 
 ---
 

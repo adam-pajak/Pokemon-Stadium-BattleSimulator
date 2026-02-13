@@ -101,7 +101,7 @@ dotnet run
 - Defeat all opponent Pokémon to win
 
 ## Game flow
-1. Player enters their name, opponent's name and chooses Pokemon for both players.
+1. Player enters their name, opponent's name and chooses Pokémon for both players.
 2. Battle begins
 3. Player chooses action => move or switch
 4. Opponent chooses action => move or switch

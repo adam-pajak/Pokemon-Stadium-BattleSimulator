@@ -1,6 +1,6 @@
 # Project Architecture
 
-This document describes the internal architecture of **Pokemon Stadium Battle Simulator**.
+This document describes the internal architecture of **Pokémon Stadium Battle Simulator**.
 It explains how the battle engine is structured, which modules are responsible for what,
 and how the main battle loop works.
 
@@ -91,7 +91,7 @@ Responsibilities:
 
 Typical data stored in `BattleContext`:
 - current turn number
-- short-term information - (`Trainer`)attacker, defender, move
+- short-term information - (`Trainer`) attacker, defender, move
 - information needed across multiple turns (`LastMove`/`LastDamage`/etc.)
 
 ---
