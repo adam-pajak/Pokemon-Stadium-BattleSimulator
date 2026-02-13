@@ -28,7 +28,7 @@ This folder contains technical documentation for the **Pokémon Stadium Battle S
 - [Type Effectiveness](type-effectiveness.md)
 
 ### 5. Data Files
-- [Pokemon and Moves JSON Format](data-format.md)
+- [Pokémon and Moves JSON Format](data-format.md)
 - [How DataLoader Works](data-loader.md)
 
 ### 6. Development Notes
