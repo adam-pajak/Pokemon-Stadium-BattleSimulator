@@ -20,7 +20,7 @@ The goal is to recreate classic Pokémon battle mechanics with clean code and ex
 
 ## Project Structure
 ```
-PokemonStadiumSrc/
+Pokemon-Stadium-BattleSimulator/
 ├── Battle/
 │ ├── Calculators/
 │ │ ├── AccuracyCalculator.cs
@@ -72,6 +72,10 @@ PokemonStadiumSrc/
 ├── Services/
 │ ├── DataLoader.cs
 │ └── Game.cs
+├── docs/
+│ ├── README.md
+│ └── techcical documentation files...
+├── README.md
 └── Program.cs
 ```
 ## Requirements
@@ -108,7 +112,7 @@ dotnet run
 5. Turn order is calculated
 6. Moves (effects) are executed one by one
 7. If one of the players (or both) lost all their Pokémon => battle ends, else => go to step 3.
-8. One of the players wins and program ends.
+8. One of the players wins and battle can be reviewed.
 
 ## Documentation
 More documentation will be added inside the /docs folder.
@@ -118,5 +122,6 @@ No license yet.
 This project is currently developed as a personal learning project.
 Suggestions and pull requests are welcome.
 
+## Notes
 [^1]: From: https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9_Cup_Rental_Pok%C3%A9mon_in_Pok%C3%A9mon_Stadium (note that some moves were not used due to their effect and were replaced by other moves)
 [^2]: Choose version and download it from this website: https://dotnet.microsoft.com/en-us/download/dotnet
