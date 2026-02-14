@@ -325,6 +325,6 @@ The engine is based on a modular design where:
 
 This structure allows the battle simulator to grow into a complete Pokémon battle engine.
 
----
+## Notes
 
 [^1]: Not implemented.
