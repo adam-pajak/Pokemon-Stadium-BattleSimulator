@@ -218,13 +218,15 @@ The battle engine core is based on:
 This design is inspired by classic Pokémon mechanics and allows easy extension
 through additional effects, calculators and battle rules.
 
+## Notes
+
 [^1]: Not implemented - reference: https://bulbapedia.bulbagarden.net/wiki/Weather
 [^2]: Not implemented - reference: https://bulbapedia.bulbagarden.net/wiki/Terrain
 [^3]: https://bulbapedia.bulbagarden.net/wiki/HP
-[^4]: Attack, Defense, Special Attack, Special Defense, Speed and in-battle stats: Accuracy, Evasion. Reference: https://bulbapedia.bulbagarden.net/wiki/Stat
+[^4]: Attack, Defense, Special Attack, Special Defense, Speed and in-battle stats: Accuracy, Evasion. See: https://bulbapedia.bulbagarden.net/wiki/Stat
 [^5]: https://bulbapedia.bulbagarden.net/wiki/Stat_modifier
 [^6]: Not implemented - reference: https://bulbapedia.bulbagarden.net/wiki/Status_condition
-[^7]: As a class BattleMove. Reference: https://bulbapedia.bulbagarden.net/wiki/Move
+[^7]: As a class BattleMove - reference: https://bulbapedia.bulbagarden.net/wiki/Move
 [^8]: https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_(species)
 [^9]: See stages multipliers section: https://bulbapedia.bulbagarden.net/wiki/Stat_modifier 
-[^10]: Name, Power, Accuracy, Type, Category - Reference: https://bulbapedia.bulbagarden.net/wiki/Move
+[^10]: Name, Power, Accuracy, Type, Category - reference: https://bulbapedia.bulbagarden.net/wiki/Move
