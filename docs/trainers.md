@@ -193,5 +193,6 @@ for example:
 - scripted trainer (Gym Leader behavior)
 - advanced AI trainer
 
+## Notes
 
 [^1]: Currently Disable
