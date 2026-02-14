@@ -237,6 +237,7 @@ During calculations, the engine uses:
 
 This approach keeps battle logic modular and avoids permanently modifying base stats.
 
+## Notes
 
 [^1]: Note that in gen 1 only there was a Special stat instead of Sp.Attack and Sp.Defense. However, due to problems with access to data of this stat,
 this project does not implement it - reference: https://bulbapedia.bulbagarden.net/wiki/Stat#List_of_stats
