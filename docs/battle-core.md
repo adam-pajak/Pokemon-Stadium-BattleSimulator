@@ -67,17 +67,19 @@ because battle requires additional dynamic state.
 
 ### Responsibilities
 - stores current HP (hit points)[^3]
-- stores all (battle) stats appropriate to his level[^4]
-- stores current stat stages[^5]
-- stores current status condition (Sleep, Burn, etc.)[^6]
-- stores available moves[^7]
+- stores Pokémon types[^4]
+- stores all (battle) stats appropriate to his level[^5]
+- stores current stat stages[^6]
+- stores current status condition (Sleep, Burn, etc.)[^7]
+- stores available moves[^8]
 - provides methods for applying damage, healing and stat changes
 
 ### Important properties
 Common values stored in a battle Pokémon:
 - `CurrentHP`
+- `Types`
 - `Level`
-- `Species` - `Pokemon` object which represents its species[^8]
+- `Species` - `Pokemon` object which represents its species[^9]
 - `BattleStats`
 - `StatStages`
 - list of known moves
@@ -85,7 +87,7 @@ Common values stored in a battle Pokémon:
 
 ### Stat stages
 Stat stages represent temporary stat modifiers.
-They are applied using the Gen 1 stage multiplier rules.[^9]
+They are applied using the Gen 1 stage multiplier rules.[^10]
 Stage modifiers are stored in a separate class which can modify them.
 
 ### Example: applying damage
@@ -105,7 +107,7 @@ It contains all information required to execute a move and apply its effects.
 Unlike the base `Move` model (`Models/Moves/Move.cs`), `BattleMove` is used directly inside the battle system.
 
 ### Responsibilities
-- stores move metadata[^10]
+- stores move metadata[^11]
 - stores move target rules
 - stores list of move effects
 - provides the execution pipeline for applying effects
@@ -121,6 +123,7 @@ Example:
 - `StatChangeEffect`
 
 This allows complex Gen 1 moves to be described without writing custom code for every move.
+To learn more about moves read [moves.md](moves.md).
 
 ---
 
@@ -223,10 +226,11 @@ through additional effects, calculators and battle rules.
 [^1]: Not implemented - reference: https://bulbapedia.bulbagarden.net/wiki/Weather
 [^2]: Not implemented - reference: https://bulbapedia.bulbagarden.net/wiki/Terrain
 [^3]: https://bulbapedia.bulbagarden.net/wiki/HP
-[^4]: Attack, Defense, Special Attack, Special Defense, Speed and in-battle stats: Accuracy, Evasion. See: https://bulbapedia.bulbagarden.net/wiki/Stat
-[^5]: https://bulbapedia.bulbagarden.net/wiki/Stat_modifier
-[^6]: Not implemented - reference: https://bulbapedia.bulbagarden.net/wiki/Status_condition
-[^7]: As a class BattleMove - reference: https://bulbapedia.bulbagarden.net/wiki/Move
-[^8]: https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_(species)
-[^9]: See stages multipliers section: https://bulbapedia.bulbagarden.net/wiki/Stat_modifier 
-[^10]: Name, Power, Accuracy, Type, Category - reference: https://bulbapedia.bulbagarden.net/wiki/Move
+[^4]: https://bulbapedia.bulbagarden.net/wiki/Type 
+[^5]: Attack, Defense, Special Attack, Special Defense, Speed and in-battle stats: Accuracy, Evasion. See: https://bulbapedia.bulbagarden.net/wiki/Stat
+[^6]: https://bulbapedia.bulbagarden.net/wiki/Stat_modifier
+[^7]: Not implemented - reference: https://bulbapedia.bulbagarden.net/wiki/Status_condition
+[^8]: As a class BattleMove - reference: https://bulbapedia.bulbagarden.net/wiki/Move
+[^9]: https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_(species)
+[^10]: See stages multipliers section: https://bulbapedia.bulbagarden.net/wiki/Stat_modifier 
+[^11]: Name, Power, Accuracy, Type, Category - reference: https://bulbapedia.bulbagarden.net/wiki/Move
