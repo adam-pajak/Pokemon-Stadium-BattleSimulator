@@ -135,7 +135,7 @@ Every effect must implement a method that applies its logic to the battle state.
 
 The enum `EffectType` defines the type of effect a move uses.
 
-Example types (based on your project structure):
+Example types:
 - Damage
 - StatChange
 - Multistrike
@@ -153,13 +153,13 @@ This folder contains implementations of `IMoveEffect`.
 
 The engine supports multiple effects (17 implemented).
 Each effect class exists to represent a reusable battle behavior.
-Learn more in [move-effects.md](move-effects.md).
+Learn more in [this file](move-effects.md).
 
 New effects can be added by:
 - creating a new `IMoveEffect` implementation
 - adding its `EffectType`
 - connecting it in the effect factory (`DataLoader`)
-For details see: []
+For details see: [adding-effects.md](adding-effects.md)
 ---
 
 ## 10. Move Loading (DTO + JSON)
@@ -172,8 +172,8 @@ Loading flow:
 
 1. JSON is parsed into `MoveDto`
 2. DTO is mapped into `Move`
-3. Each move definition is stored in memory
-4. When battle begins, moves are assigned to Pokémon
+3. Each move definition is stored in memory and `BattleContext`
+4. When `Pokemon` for battle was chosen, they are becoming `BattlePokemon` and its moves are becoming a list of `BattleMove`
 
 ### DTO Classes
 Located in:
