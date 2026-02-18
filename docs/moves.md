@@ -143,7 +143,7 @@ Example types:
 - etc.
 
 The effect type is typically loaded from JSON and used to determine which `IMoveEffect`
-implementation should be created.
+implementation should be created. Learn more in [data-loader.cs](data-loader.cs).
 
 ---
 
@@ -198,16 +198,40 @@ BattleMove is executed
     ↓
 AccuracyCalculator checks if move hits
     ↓
-If hit:
+
+→ If hit:
     ↓
 Move effects execute (IMoveEffect)
+    
+→ Else:
     ↓
-Damage / stat changes / context changes applied
+Only some effects execute (for example: ChargingTurnEffect / SelfdestructEffect)
+
+    ↓
+Effect are applied
     ↓
 Battle continues or ends if a Pokémon faints
 ```
+Moves do not directly modify the game state.
+Instead, they use the effect system and calculators.
 
+## 12. Notes About Gen 1 / Stadium Mechanics
 
+Pokémon Stadium is based on Gen 1 mechanics, which include special rules such as:
+	•	critical hit rate depends on speed (Gen 1 rule)
+	•	some moves behave differently than in later generations
+
+These rules are implemented inside calculators and effects rather than inside move data.
+
+## 13. Summary
+
+The move system is built on 3 layers:
+	•	Move definitions (`Move`, loaded from JSON)
+	•	Battle representation (`BattleMove`, used in battle execution)
+	•	Effect system (`IMoveEffect`, reusable modular behaviors)
+
+This architecture makes it easy to expand the engine by adding new effects and move data.
+## Notes
 [^1]: https://bulbapedia.bulbagarden.net/wiki/Type
 [^2]: https://bulbapedia.bulbagarden.net/wiki/Damage_category
 [^3]: https://bulbapedia.bulbagarden.net/wiki/PP
