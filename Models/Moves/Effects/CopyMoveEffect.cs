@@ -17,7 +17,7 @@ public class CopyMoveEffect : IMoveEffect
         {
             var newMove = context.Defender.ActivePokemon.Moves[context.Range.Next(0, context.Defender.ActivePokemon.Moves.Count)];
             int index = context.Attacker.ActivePokemon.Moves.FindIndex(m => m.Property.Name == "Mimic");
-            context.Attacker.ActivePokemon.Moves.Insert(index, newMove);
+            context.Attacker.ActivePokemon.Moves[index] = newMove;
             context.Log($"{context.Attacker.ActivePokemon.Species.Name} learned {newMove}!");
         }
         // MirrorMove
