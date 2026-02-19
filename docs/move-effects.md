@@ -240,6 +240,16 @@ including accuracy checks and all effects.
 
 ---
 
+### Summary
+`CopyMoveEffect` is a dual-purpose move effect implementing two separate mechanics:
+- **Mimic**: modifies the attacker’s moveset during battle by copying a random defender move.
+- **Mirror Move**: re-executes the last used move, with safety checks to avoid infinite recursion.
+The effect depends heavily on battle state stored in `BattleContext`, especially:
+- `context.LastMove`
+- `attacker` and `defender` Pokémon move lists
+
+---
+
 ## 6. CounterDamageEffect.cs
 
 ### Purpose
@@ -282,19 +292,17 @@ If all conditions are met:
 ---
 
 ### Notes About Implementation
--The effect assumes that context.LastDamage represents damage received by the attacker in the previous action.
--The effect only works against moves of the correct category (Physical or Special depending on _category).
+-The effect assumes that `context.LastDamage` represents damage received by the attacker in the previous action.
+-The effect only works against moves of the correct category (`Physical` or `Special` depending on `_category`).
 -Damage is applied directly and ignores accuracy checks, since Counter-style moves do not behave like normal attacks.
 
 ---
 
 ### Summary
-`CopyMoveEffect` is a dual-purpose move effect implementing two separate mechanics:
-- **Mimic**: modifies the attacker’s moveset during battle by copying a random defender move.
-- **Mirror Move**: re-executes the last used move, with safety checks to avoid infinite recursion.
-The effect depends heavily on battle state stored in `BattleContext`, especially:
-- `context.LastMove`
-- `attacker` and `defender` Pokémon move lists
+
+`CounterDamageEffect` is a reactive effect that uses battle history stored in `BattleContext`
+(`LastMove` and `LastDamage`) to deal back double damage, but only if the last move matches
+the expected category.
 
 ---
 
