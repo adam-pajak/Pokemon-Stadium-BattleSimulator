@@ -292,9 +292,9 @@ If all conditions are met:
 ---
 
 ### Notes About Implementation
--The effect assumes that `context.LastDamage` represents damage received by the attacker in the previous action.
--The effect only works against moves of the correct category (`Physical` or `Special` depending on `_category`).
--Damage is applied directly and ignores accuracy checks, since Counter-style moves do not behave like normal attacks.
+- The effect assumes that `context.LastDamage` represents damage received by the attacker in the previous action.
+- The effect only works against moves of the correct category (`Physical` or `Special` depending on `_category`).
+- Damage is applied directly and ignores accuracy checks, since Counter-style moves do not behave like normal attacks.
 
 ---
 
