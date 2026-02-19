@@ -240,6 +240,54 @@ including accuracy checks and all effects.
 
 ---
 
+## 6. CounterDamageEffect.cs
+
+### Purpose
+`CounterDamageEffect` implements counter-style moves that reflect damage back at the opponent.
+
+This effect is used for moves such as:
+- **Counter**[^6] (reflects Physical damage)
+- **Mirror Coat**[^7] (reflects Special damage)
+
+The effect behavior depends on the `_category` parameter passed to the constructor.
+
+---
+
+### Core Mechanic
+The effect checks the last damage received and the last move used in battle.
+
+#### Conditions required to succeed
+The effect fails if any of the following is true:
+- `context.LastDamage` is `null`
+- `context.LastMove` is `null`
+- the last move category does not match `_category`
+
+In failure cases the battle log prints:
+> But it failed!
+
+---
+
+### Successful execution
+If all conditions are met:
+
+1. A log message is printed:
+> {attackerPokemonName} countered {lastMoveName}!
+2. The defender takes damage equal to twice the damage taken (`context.LastDamage`)
+3. The engine applies damage using: `context.Defender.ActivePokemon.TakeDamage(...)`
+4. A damage log message is printed:
+> {defenderPokemonName} received {takenDamage}[^8] damage!
+5. If the defender faints, the effect prints:
+> {defenderPokemonDamage} fainted!
+
+---
+
+### Notes About Implementation
+-The effect assumes that context.LastDamage represents damage received by the attacker in the previous action.
+-The effect only works against moves of the correct category (Physical or Special depending on _category).
+-Damage is applied directly and ignores accuracy checks, since Counter-style moves do not behave like normal attacks.
+
+---
+
 ### Summary
 `CopyMoveEffect` is a dual-purpose move effect implementing two separate mechanics:
 - **Mimic**: modifies the attacker’s moveset during battle by copying a random defender move.
@@ -268,3 +316,7 @@ while keeping mechanics modular and testable.
 [^3]: https://m.bulbapedia.bulbagarden.net/wiki/Category:Moves_with_a_semi-invulnerable_turn
 [^4]: https://m.bulbapedia.bulbagarden.net/wiki/Mimic_(move)
 [^5]: https://m.bulbapedia.bulbagarden.net/wiki/Mirror_Move_(move)
+[^6]: https://m.bulbapedia.bulbagarden.net/wiki/Counter_(move)
+[^7]: Move not implemented since it was introduced in Generation 2 - reference: https://m.bulbapedia.bulbagarden.net/wiki/Mirror_Coat_(move)
+[^8]: Note that in the original games the number of damage was not displayed.
+ 
