@@ -378,7 +378,7 @@ When `Apply(BattleContext context)` is called:
 
 2) Log:
 
-   > `<Attacker>` countered `<LastMoveName>`!
+   > `<Attacker>` countered `<Move>`!
 
 3) Calculate reflected damage:
 
@@ -682,7 +682,7 @@ If there is no previously used move:
 
 - If the move is already disabled:
   - the battle log prints:
-    > `<Attacker>`'s `<MoveName>` is already disabled!
+    > `<Attacker>`'s `<Move>` is already disabled!
 
 ---
 
