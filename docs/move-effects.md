@@ -262,7 +262,7 @@ Mode 1 — Mimic (`replace == true`)
 
 4) Log:
 
-   > <Attacker> learned <Move>!
+   > `<Attacker>` learned `<Move>`!
 
 The copied move becomes part of the attacker’s move set.
 
@@ -276,7 +276,7 @@ Mode 2 — Mirror Move (`replace == false`)
    - Exit.
 
 2) Log:
-   > <Attacker> copied <MoveName>!
+   > `<Attacker>` copied `<Move>`!
 
 3) If the last move was "MirrorMove":
    - Log:
@@ -308,7 +308,7 @@ without modifying the attacker’s move list.
 
 ---
 
-  ##### Architectural Role
+ ##### Architectural Role
 
 `CopyMoveEffect` is a delegation-based effect
 with optional state mutation.
