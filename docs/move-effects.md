@@ -378,7 +378,7 @@ When `Apply(BattleContext context)` is called:
 
 2) Log:
 
-   > <Attacker> countered <LastMoveName>!
+   > `<Attacker>` countered `<LastMoveName>`!
 
 3) Calculate reflected damage:
 
@@ -390,11 +390,11 @@ When `Apply(BattleContext context)` is called:
 
 5) Log:
 
-   > <Defender> received <damage>[^8] damage!
+   > `<Defender>` received `<damage>`[^8] damage!
 
 6) If defender faints:
    - Log:
-     > <Defender> fainted!
+     > `<Defender>` fainted!
 
 ---
 
@@ -481,7 +481,7 @@ When `Apply(BattleContext context)` is called:
 
    - Log:
 
-     `<Defender> received <X> damage.`
+     > `<Defender>` received `<damage>`[^8] damage.
 
 ---
 
@@ -572,7 +572,7 @@ it is printed before damage is applied.
 Critical hit determination is delegated to `CriticalHitCalculator.IsCriticalHit(...)`.
 
 If the hit is critical, the effect logs:
-"Critical hit!"
+> Critical hit!
 
 The result (true/false) is passed to the damage calculator.
 
@@ -599,11 +599,11 @@ Damage is applied using:
 
 If damage is greater than 0, the effect logs:
 
-> <Defender> received <damage>[^8] damage!
+> `<Defender>` received `<damage>[^8]` damage!
 
 If the defender faints, it logs:
 
-> <Defender> fainted!
+> `<Defender>` fainted!
 
 5) Updating Battle History  
 After damage is applied:
@@ -678,11 +678,11 @@ If there is no previously used move:
   - the move is disabled using:
     `lastMove.Disable(duration)`
   - the battle log prints:
-    > <Attacker>'s <MoveName> was disabled!
+    > `<Attacker>`'s `<Move>` was disabled!
 
 - If the move is already disabled:
   - the battle log prints:
-    > <Attacker>'s <MoveName> is already disabled!
+    > `<Attacker>`'s `<MoveName>` is already disabled!
 
 ---
 
@@ -743,7 +743,7 @@ When `Apply(BattleContext context)` is called:
 
 1) If the attacker is already at full HP:
 - the effect logs:
-> <Attacker> hp is full!
+> `<Attacker>` hp is full!
 - the effect ends immediately
 
 2) If `context.LastDamage` is null:
@@ -760,7 +760,7 @@ When `Apply(BattleContext context)` is called:
 - HP is restored using:
   `ActivePokemon.RestoreHp(heal)`
 - the battle log prints:
-> <Attacker> drained <restoredHp>[^12] energy!
+> `<Attacker>` drained `<restoredHp>`[^12] energy!
 
 ---
 
@@ -834,7 +834,7 @@ When `Apply(BattleContext context)` is called:
 - If `_fixedPower` is null:
   `damage = attacker.Level`
 - Otherwise:
-  `damage = fixedPower`
+  `damage = _fixedPower`
 
 2) Apply damage directly using:
 
@@ -842,7 +842,7 @@ When `Apply(BattleContext context)` is called:
 
 3) If damage is greater than 0, log:
 
-> <Defender> received <damage>[^8] damage!
+> `<Defender>` received `<damage>`[^8] damage!
 
 4) If the defender faints, log:
 
@@ -959,7 +959,7 @@ When `Apply(BattleContext context)` is called:
 
    - If damage > 0:
      log - 
-     > <Defender> received <damage>[^8] damage!
+     > `<Defender>` received `<damage>`[^8] damage!
 
    - `context.LastDamage` is updated
 
@@ -972,7 +972,7 @@ When `Apply(BattleContext context)` is called:
    - Type effectiveness message is logged
    - Critical hit message is logged (if applicable)
    - Final message:
-     > It hit <h> time(s)!
+     > It hit `<h>` time(s)!
 
 ---
 
@@ -1045,7 +1045,7 @@ When `Apply(BattleContext context)` is called:
    - log:
      `It's One-Hit KO!`
    - log:
-     > <Defender> fainted!
+     > `<Defender>` fainted!
 
 ---
 
@@ -1204,11 +1204,11 @@ When `Apply(BattleContext context)` is called:
      `TakeDamage(recoil)`
 
    - Log:
-     > <Attacker>'s hit with <recoil>[^12] recoil!
+     > `<Attacker>`'s hit with `<recoil>`[^12] recoil!
 
 5) If the attacker faints:
    - Log:
-     > <Attacker> fainted.
+     > `<Attacker>` fainted.
 
 ---
 
@@ -1278,7 +1278,7 @@ When `Apply(BattleContext context)` is called:
 1) If the attacker is already at full HP:
 
    - Log:
-     > <Attacker> hp is full.
+     > `<Attacker>` hp is full.
    - End effect.
 
 2) Otherwise:
@@ -1291,7 +1291,7 @@ When `Apply(BattleContext context)` is called:
      `RestoreHp(heal)`
 
    - Log:
-     > <Attacker> recovered <restoredHp> hp.
+     > `<Attacker>` recovered `<restoredHp>` hp.
 
 ---
 
@@ -1353,7 +1353,7 @@ When `Apply(BattleContext context)` is called:
    `ActivePokemon.Knockout()`
 
 2) Log:
-   > <Attacker> fainted!
+   > `<Attacker>` fainted!
 
 ---
 
@@ -1469,7 +1469,7 @@ When `Apply(BattleContext context)` is called:
 
 8) Log:
 
-   > <Pokemon>'s <message>
+   > `<Pokemon>`'s `<message>`
     **Examples:**
    > Pikachu's Attack rose!
    > Pikachu's Accuracy fell!
@@ -1645,7 +1645,7 @@ When `Apply(BattleContext context)` is called:
 
 3) Log:
 
-   > <Attacker> changed type to <Type>!
+   > `<Attacker>` changed type to `<Type>`!
 
 ---
 
