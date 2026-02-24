@@ -599,7 +599,7 @@ Damage is applied using:
 
 If damage is greater than 0, the effect logs:
 
-> `<Defender>` received `<damage>[^8]` damage!
+> `<Defender>` received `<damage>`[^8] damage!
 
 If the defender faints, it logs:
 
