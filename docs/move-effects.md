@@ -45,7 +45,7 @@ Effects should not be responsible for:
 - reading JSON
 - building moves from DTOs
 - selecting targets
-- trainer decision making
+- trainer decision-making
 
 Effects only apply logic after the battle engine has determined
 who attacks and who is targeted.
@@ -846,7 +846,7 @@ When `Apply(BattleContext context)` is called:
 
 4) If the defender faints, log:
 
-> <Defender> fainted.
+> `<Defender>` fainted.
 
 5) Store the damage value in:
 
@@ -1470,10 +1470,14 @@ When `Apply(BattleContext context)` is called:
 8) Log:
 
    > `<Pokemon>`'s `<message>`
+   
     **Examples:**
    > Pikachu's Attack rose!
+
    > Pikachu's Accuracy fell!
+
    > Pikachu's Speed harshly fell!
+
    > Pikachu's Special Attack rose sharply!
 
 ---
@@ -1668,7 +1672,7 @@ When `Apply(BattleContext context)` is called:
   - modify HP
   - affect status conditions
 - It directly mutates the Pokémon’s type list.
-- Pokémon oryginal types are still available via `BattlePokemon.Species.Types`. Thanks to that, they can be restored after switch.
+- Pokémon original types are still available via `BattlePokemon.Species.Types`. Thanks to that, they can be restored after switch.
 - Type change immediately affects:
   - type effectiveness calculations
   - STAB logic
