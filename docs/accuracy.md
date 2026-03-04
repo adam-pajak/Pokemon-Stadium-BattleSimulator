@@ -1,7 +1,5 @@
 # Accuracy System
 
-## Accuracy Calculator
-
 The `AccuracyCalculator` is responsible for determining  
 whether a move successfully hits its target.
 
