@@ -8,7 +8,7 @@ This folder contains technical documentation for the **Pokémon Stadium Battle S
 
 ### 1. Overview
 - [Project Architecture](architecture.md)
-- [Game Flow (Turn System)](game-flow.md)
+- ~~[Game Flow (Turn System)](game-flow.md)~~ - Not finished
 
 ### 2. Battle System
 - [Battle Core (BattleContext, BattlePokemon, BattleMove)](battle-core.md)
@@ -19,7 +19,6 @@ This folder contains technical documentation for the **Pokémon Stadium Battle S
 ### 3. Moves System
 - [Move Model and Execution](moves.md)
 - [Move Effects List](move-effects.md)
-- [Adding a New Effect](adding-effects.md)
 
 ### 4. Calculations
 - [Damage Calculation](damage-calculation.md)
@@ -28,8 +27,8 @@ This folder contains technical documentation for the **Pokémon Stadium Battle S
 - [Type Effectiveness](type-effectiveness.md)
 
 ### 5. Data Files
-- [Pokémon and Moves JSON Format](data-format.md)
-- [How DataLoader Works](data-loader.md)
+- ~~[Pokémon and Moves JSON Format](data-format.md)~~ - Not finished
+- ~~[How DataLoader Works](data-loader.md)~~ - Not finished
 
 ### 6. Development Notes
 - Future Plans / TODO(coming soon)
