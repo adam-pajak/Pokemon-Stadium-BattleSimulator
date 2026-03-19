@@ -582,7 +582,7 @@ Final damage is calculated using:
 `DamageCalculator.Calculate(context, isCritical, effectiveness)`
 
 The calculator is responsible for:
-- applying Attack/Defense or Special/Special
+- applying Attack/Defense or Special Attack / Special Defense
 - applying stat stage multipliers
 - applying critical hit logic
 - applying type multiplier

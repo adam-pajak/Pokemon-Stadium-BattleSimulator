@@ -143,7 +143,7 @@ Example types:
 - etc.
 
 The effect type is typically loaded from JSON and used to determine which `IMoveEffect`
-implementation should be created. Learn more in [data-loader.cs](data-loader.cs).
+implementation should be created. Learn more in [data-loader.cs](data-loader.md).
 
 ---
 
@@ -159,7 +159,6 @@ New effects can be added by:
 - creating a new `IMoveEffect` implementation
 - adding its `EffectType`
 - connecting it in the effect factory (`DataLoader`)
-For details see: [adding-effects.md](adding-effects.md)
 ---
 
 ## 10. Move Loading (DTO + JSON)
